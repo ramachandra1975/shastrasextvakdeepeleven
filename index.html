@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratiprasava: Vāk's Return and the Handoff Beyond · Series B · Part Twelve · Cultural Musings</title>
+<style>
+:root{
+  --bg:#0c0a08;
+  --bg-paper:#13100d;
+  --bg-card:#181410;
+  --ink:#ece3d4;
+  --ink-dim:#b8ad9a;
+  --ink-faint:#7d7263;
+  --accent:#c9933f;
+  --accent-soft:#8a6a3a;
+  --accent-deep:#5e3f1f;
+  --rule:#2c241c;
+  --sanskrit:#e0b873;
+  --serif:'Tinos','Georgia','Times New Roman',serif;
+  --display:'Spectral','Georgia',serif;
+  --max:780px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-deep);}
+a:hover{color:var(--sanskrit);border-bottom-color:var(--accent);}
+header.masthead{text-align:center;padding:64px 24px 40px;border-bottom:1px solid var(--rule);background:radial-gradient(ellipse at top, #1b150e 0%, var(--bg) 70%);}
+.brand{letter-spacing:.22em;font-size:13px;color:var(--ink-faint);text-transform:uppercase;}
+.platform-sub{font-size:13px;color:var(--ink-faint);margin-top:4px;}
+.series-tag{margin-top:28px;font-size:14px;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;}
+.devanagari-strip{font-size:15px;color:var(--sanskrit);margin-top:10px;letter-spacing:.04em;}
+nav.toc{max-width:var(--max);margin:36px auto 0;padding:0 24px;text-align:center;font-size:14px;line-height:2.1;}
+nav.toc a{margin:0 10px;color:var(--ink-dim);border-bottom:1px dotted var(--accent-deep);}
+nav.toc a:hover{color:var(--sanskrit);}
+nav.allparts{max-width:var(--max);margin:18px auto 0;padding:18px 24px 0;border-top:1px solid var(--rule);text-align:center;font-size:13.5px;color:var(--ink-faint);line-height:1.9;}
+nav.allparts .current{color:var(--accent);font-weight:600;}
+nav.allparts a{color:var(--ink-dim);border-bottom:1px dotted var(--rule);}
+main{max-width:var(--max);margin:0 auto;padding:0 24px 80px;}
+.title-block{padding:56px 0 24px;text-align:center;}
+.title-block .kicker{font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;}
+.title-block h1{font-family:var(--display);font-size:42px;line-height:1.18;font-weight:600;margin:0 0 18px;color:#f4ead8;}
+.title-block h2.subtitle{font-family:var(--serif);font-style:italic;font-weight:400;font-size:21px;color:var(--ink-dim);margin:0 0 30px;line-height:1.5;}
+.meta-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;font-size:14px;color:var(--ink-faint);margin-top:18px;}
+.meta-grid b{color:var(--ink-dim);font-weight:600;}
+.ornament{text-align:center;color:var(--accent-soft);font-size:20px;margin:40px 0;letter-spacing:.4em;}
+section.context-box, section.preview-box{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:32px 32px;margin:32px 0;}
+section.context-box h3, section.preview-box h3{font-family:var(--display);color:var(--sanskrit);font-size:20px;margin-top:0;}
+section.context-box h4, section.preview-box h4{font-size:16px;color:var(--ink-dim);margin:24px 0 8px;text-transform:uppercase;letter-spacing:.06em;}
+table.partmap{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;}
+table.partmap th, table.partmap td{border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;}
+table.partmap th{background:#1d170f;color:var(--accent);font-weight:600;}
+table.partmap tr:nth-child(even) td{background:#15110c;}
+table.partmap td.this-paper{color:var(--sanskrit);font-weight:600;}
+blockquote.pull{margin:40px 0;padding:24px 28px;border-left:3px solid var(--accent);background:linear-gradient(90deg, #1a140c, transparent);font-style:italic;font-size:18.5px;color:#ddd0b8;}
+blockquote.pull .attrib{display:block;text-align:right;font-style:normal;font-size:13px;color:var(--accent);margin-top:12px;letter-spacing:.05em;text-transform:uppercase;}
+h1.sectionhead{font-family:var(--display);font-size:14px;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin:64px 0 4px;border-top:1px solid var(--rule);padding-top:36px;}
+h1.sectionhead + h2.sectiontitle{margin-top:6px;}
+h2.sectiontitle{font-family:var(--display);font-size:30px;line-height:1.25;color:#f4ead8;margin:0 0 28px;font-weight:600;}
+h3{font-family:var(--display);font-size:21px;color:var(--sanskrit);margin:38px 0 14px;}
+p{margin:0 0 18px;color:var(--ink);}
+.dim{color:var(--ink-dim);}
+.sanskrit-block{text-align:center;font-size:21px;color:var(--sanskrit);line-height:1.9;margin:30px 0;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.sanskrit-block .translit{display:block;font-size:15px;font-style:italic;color:var(--ink-dim);margin-top:10px;}
+.sanskrit-block .gloss{display:block;font-size:14.5px;color:var(--ink-faint);margin-top:8px;font-style:normal;}
+.cite-source{text-align:center;font-size:13px;color:var(--ink-faint);margin-top:-22px;margin-bottom:30px;letter-spacing:.04em;}
+table.datatable{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;}
+table.datatable th,table.datatable td{border:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top;}
+table.datatable th{background:#1d170f;color:var(--accent);}
+table.datatable tr:nth-child(even) td{background:#15110c;}
+table.datatable caption{text-align:left;font-size:14px;color:var(--ink-faint);margin-bottom:10px;font-style:italic;}
+.divider-orn{text-align:center;color:var(--accent-deep);font-size:20px;margin:46px 0;letter-spacing:.5em;}
+.reading-note{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:20px 24px;margin:24px 0;font-size:14.5px;color:var(--ink-dim);}
+.reading-note b{color:var(--ink);}
+.glossterm{font-family:var(--display);color:var(--sanskrit);font-size:17px;}
+dl.glossary dt{margin-top:22px;}
+dl.glossary dd{color:var(--ink-dim);font-size:14.5px;margin:6px 0 0;}
+.footnotes{font-size:14.5px;color:var(--ink-dim);}
+.footnotes li{margin-bottom:14px;}
+footer.papertail{text-align:center;padding:48px 24px 80px;border-top:1px solid var(--rule);margin-top:60px;}
+footer.papertail .om{font-size:24px;color:var(--accent);margin-bottom:14px;}
+footer.papertail .omtatsat{font-size:14px;color:var(--ink-faint);font-style:italic;margin-bottom:30px;}
+footer.papertail .stamp{font-size:13px;color:var(--ink-faint);line-height:1.9;}
+footer.papertail .stamp b{color:var(--ink-dim);}
+
+.casestudy{background:var(--bg-card);border:1px solid var(--rule);border-radius:4px;padding:26px 28px;margin:26px 0;}
+.casestudy h4{font-family:var(--display);color:var(--sanskrit);font-size:18px;margin:0 0 6px;}
+.casestudy .cs-num{display:inline-block;font-size:11px;color:var(--accent);border:1px solid var(--accent-deep);border-radius:3px;padding:2px 8px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.casestudy .cs-arc{font-size:13.5px;color:var(--ink-faint);font-style:italic;margin:10px 0 0;border-top:1px dotted var(--rule);padding-top:10px;}
+
+/* ===== Six-Tab Deep-Dive Widget ===== */
+.tabwidget{background:var(--bg-card);border:1px solid var(--rule);border-radius:6px;margin:40px 0;overflow:hidden;}
+.tabwidget-head{padding:24px 28px 0;}
+.tabwidget-head h3{margin-top:0;}
+.tabwidget-head p{font-size:14.5px;color:var(--ink-dim);}
+.tab-buttons{display:flex;flex-wrap:wrap;gap:2px;background:var(--rule);padding:2px;margin:20px 0 0;position:sticky;top:0;}
+.tab-btn{flex:1 1 140px;background:#181410;border:none;color:var(--ink-faint);font-family:var(--serif);font-size:13.5px;padding:14px 10px;cursor:pointer;letter-spacing:.03em;text-transform:uppercase;transition:background .15s,color .15s;}
+.tab-btn:hover{color:var(--sanskrit);background:#1d170f;}
+.tab-btn.active{background:var(--bg-paper);color:var(--accent);font-weight:600;box-shadow:inset 0 -2px 0 var(--accent);}
+.tab-panels{padding:30px 28px 34px;}
+.tab-panel{display:none;animation:fadein .2s ease;}
+.tab-panel.active{display:block;}
+@keyframes fadein{from{opacity:0;}to{opacity:1;}}
+.tab-panel h4{font-family:var(--display);color:var(--sanskrit);font-size:19px;margin:0 0 14px;}
+.tab-panel p{font-size:15.5px;}
+.tab-panel table.datatable{font-size:14px;margin:16px 0;}
+
+/* ===== Paginator ===== */
+.view-toggle{position:sticky;top:0;z-index:50;background:#0f0c09;border-bottom:1px solid var(--rule);padding:10px 24px;text-align:center;font-size:13px;letter-spacing:.05em;text-transform:uppercase;}
+.view-toggle button{background:none;border:1px solid var(--accent-deep);color:var(--ink-dim);font-family:var(--serif);font-size:12.5px;padding:6px 14px;border-radius:3px;cursor:pointer;margin:0 4px;letter-spacing:.05em;text-transform:uppercase;}
+.view-toggle button.active{color:var(--accent);border-color:var(--accent);}
+#page-indicator{color:var(--sanskrit);margin:0 10px;}
+.paginator-bar{position:fixed;left:0;right:0;bottom:0;background:#0f0c09;border-top:1px solid var(--rule);padding:14px 24px;text-align:center;z-index:60;display:none;}
+.paginator-bar.show{display:block;}
+.paginator-bar button{background:var(--bg-card);border:1px solid var(--accent-deep);color:var(--ink-dim);font-family:var(--serif);padding:8px 20px;border-radius:3px;cursor:pointer;margin:0 10px;}
+.paginator-bar button:hover{color:var(--sanskrit);border-color:var(--accent);}
+.paginator-bar button:disabled{opacity:.35;cursor:default;}
+.paginator-bar .pg-status{color:var(--sanskrit);font-size:14px;letter-spacing:.04em;}
+body.paginated main{padding-bottom:120px;}
+.page-hidden{display:none !important;}
+
+.tab-badge{display:inline-block;font-size:11px;color:var(--accent);border:1px solid var(--accent-deep);border-radius:3px;padding:2px 8px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+@media(max-width:600px){
+  body{font-size:16.5px;}
+  .title-block h1{font-size:30px;}
+  .title-block h2.subtitle{font-size:18px;}
+  h2.sectiontitle{font-size:24px;}
+  nav.toc a{margin:0 6px;display:inline-block;}
+  .tab-buttons{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<div class="view-toggle">
+  <button id="btn-scroll-view" class="active">Continuous Scroll</button>
+  <button id="btn-page-view">Paginated View (60 pp.)</button>
+  <span id="page-indicator"></span>
+</div>
+
+<header class="masthead">
+  <div class="brand">Cultural Musings</div>
+  <div class="platform-sub">Vedic &amp; Śāstric Research Platform</div>
+  <div class="series-tag">Series B · Part Twelve of Twelve · Closing Volume · Extended Deep Edition</div>
+  <div class="devanagari-strip">प्रतिप्रसवः · प्रसवः · वाक् · कैवल्यम् · संस्कारशेषः · गुणप्रतिक्रमः · निवृत्तिः · स्वरूपप्रतिष्ठा · दशोदाहरणानि · संहितीकरणम्</div>
+
+  <nav class="toc" aria-label="This paper">
+    <a href="#series-context">Series Context</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#sec-1">I. Restating the Series' Closing Question</a>
+    <a href="#sec-2">II. Pratiprasava: Etymology and Technical Sense</a>
+    <a href="#sec-3">III. Prasava and Pratiprasava: The Sāṃkhya Pair</a>
+    <a href="#sec-4">IV. Vāk's Arc Restated: Part One to Part Eleven</a>
+    <a href="#sec-5">V. Why a Twelve-Part Series Closes Rather Than Ends</a>
+    <a href="#sec-6">VI. Mantra-Śāstra's Own Anticipation of Closure</a>
+    <a href="#sec-7">VII. Dharma as the Series' Evaluative Spine, Recapitulated</a>
+    <a href="#sec-8">VIII. Kaivalya and Pratiprasava: The Yoga-Sāṃkhya Terminus</a>
+    <a href="#sec-9">IX. Guṇa-Pratiprasava: The Return of the Guṇas</a>
+    <a href="#sec-10">X. Saṃskāra-Śeṣa: What Remains After Return</a>
+    <a href="#sec-11">XI. Ten Case Studies — Introduction to Method</a>
+    <a href="#sec-casestudies">XII–XXI. Ten Documented Case Studies in Full-Circle Return</a>
+    <a href="#sec-22">XXII. Svarūpa-Pratiṣṭhā: Resting in One's Own Nature</a>
+    <a href="#sec-23">XXIII. This Series' Own Documented Self-Application</a>
+    <a href="#sec-24">XXIV. What This Project Hands Forward</a>
+    <a href="#sec-25">XXV. Synthesis: The Twelve Parts as a Single Argument</a>
+    <a href="#tabwidget-anchor">Six-Panel Deep-Dive Tabs</a>
+    <a href="#sec-appendix">Methodological Appendix</a>
+    <a href="#footnotes">Footnotes</a>
+    <a href="#bibliography">Bibliography</a>
+    <a href="#glossary">Glossary</a>
+    <a href="#sec-recap">Recap, Closing Synthesis &amp; Project Handoff</a>
+  </nav>
+
+  <nav class="allparts" aria-label="Series B — all parts">
+    <a href="#">Part I · Vāk as the Ground of Psychological Awareness</a> ·
+    <a href="#">Part II · Śabda-Bheda: The Birth of Discrimination</a> ·
+    <a href="#">Part III · Sāma Veda and the Birth of Affect</a> ·
+    <a href="#">Part IV · Nāṭyaśāstra I: Rasa</a> ·
+    <a href="#">Part V · Nāṭyaśāstra II: Abhinaya</a> ·
+    <a href="#">Part VI · Yoga-Śāstra: Citta-Vṛtti</a> ·
+    <a href="#">Part VII · Proliferation I: Vyākaraṇa, Nyāya</a> ·
+    <a href="#">Part VIII · Proliferation II: Arthaśāstra, Āyurveda</a> ·
+    <a href="#">Part IX · Mantra-Śāstra: Vāk's Recursive Return</a> ·
+    <a href="#">Part X · Case Studies in Śabda-to-Śāstra Transmission</a> ·
+    <a href="#">Part XI · Dharma and Adharma</a> ·
+    <span class="current">Part XII · Pratiprasava</span>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <div class="title-block">
+    <div class="kicker">Series B · Part XII of XII · White Paper · Closing Volume · Extended Deep Edition</div>
+    <h1>Pratiprasava: Vāk's Return and the Handoff Beyond</h1>
+    <h2 class="subtitle">How This Series' Eleven Prior Transmission-Studies Fold Back Into the Single Ground From Which They Began — Documented Through Ten Case Studies of Full-Circle Return, and What This Project Hands Forward Once That Return Is Complete</h2>
+    <div class="meta-grid">
+      <span><b>Series</b> B · Part XII of XII — Closing Volume</span>
+      <span><b>Vāk Level</b> Closing Return — Where the Series' Own Proliferated Apparatus Folds Back Into Its Own Point of Departure</span>
+      <span><b>Format</b> White Paper · 25 Core Sections + Ten Case Studies + Six-Panel Deep-Dive Tab Widget</span>
+      <span><b>Predecessor</b> Series B · Part XI — Dharma and Adharma: The Ethical-Metaphysical Synthesis</span>
+    </div>
+  </div>
+
+  <div class="ornament">↗</div>
+
+  <section id="series-context" class="context-box">
+    <h3>Where Part Twelve Stands in the Series</h3>
+    <p>Part Eleven's own closing section named dharma as the evaluative framework every one of this series' proliferated disciplines had already presupposed. Part Twelve now completes the series' own larger documented arc, taking up the question Part One opened and every intervening part has, on this paper's reading, been quietly answering by extension: what happens to Vāk — the ground of psychological awareness Part One documented — once it has proliferated through discrimination, affect, aesthetic embodiment, somatic cognition, disciplined attention, specialised śāstra, social and medical extension, recursive mantric self-application, historical transmission, and ethical evaluation, across eleven prior parts? This paper's documented answer is pratiprasava: a technical Sāṃkhya term this paper examines at length (Section II) naming not a discarding of everything the proliferated apparatus built, but its own return, apparatus intact, to the single undifferentiated ground from which it arose. Part Twelve documents this return across ten worked case studies (Sections XII–XXI), one drawn from each of this series' major disciplinary domains, before offering this project's own closing synthesis and handoff.</p>
+
+    <table class="partmap">
+      <tr><th>Part</th><th>Psychological Stage</th><th>Focus</th></tr>
+      <tr><td>I</td><td>Pre-differentiated awareness</td><td>Vāk as the Ground of Psychological Awareness</td></tr>
+      <tr><td>II</td><td>Differentiation / discernment</td><td>Śabda-Bheda: The Birth of Discrimination</td></tr>
+      <tr><td>III</td><td>Feeling-toned cognition</td><td>Sāma Veda and the Birth of Affect</td></tr>
+      <tr><td>IV</td><td>Aesthetic embodiment</td><td>Nāṭyaśāstra I: Rasa</td></tr>
+      <tr><td>V</td><td>Somatic cognition</td><td>Nāṭyaśāstra II: Abhinaya</td></tr>
+      <tr><td>VI</td><td>Self-regulation / will</td><td>Yoga-Śāstra: Citta-Vṛtti and Disciplined Attention</td></tr>
+      <tr><td>VII</td><td>Specialised cognition</td><td>Proliferation of Śāstra I: Vyākaraṇa, Nyāya</td></tr>
+      <tr><td>VIII</td><td>Social/embodied extension</td><td>Proliferation of Śāstra II: Arthaśāstra, Āyurveda</td></tr>
+      <tr><td>IX</td><td>Recursive self-application</td><td>Mantra-Śāstra: Vāk Returning as Sound-Technology</td></tr>
+      <tr><td>X</td><td>Applied/historical synthesis</td><td>Śabda Becomes Śāstra: Case Studies in Transmission</td></tr>
+      <tr><td>XI</td><td>Ethical-metaphysical synthesis</td><td>Dharma and Adharma</td></tr>
+      <tr><td class="this-paper">XII</td><td class="this-paper">Closing return</td><td class="this-paper">This Paper — Pratiprasava: Vāk's Return and the Handoff Beyond</td></tr>
+    </table>
+  </section>
+
+  <div class="ornament">✦</div>
+
+  <section id="abstract">
+    <h2 class="sectiontitle" style="font-size:24px;">Abstract</h2>
+    <p>This closing paper documents pratiprasava — the Sāṃkhya technical term for involutionary return — as the organising frame for Series B's own twelfth and final part. Twenty-five core sections trace pratiprasava's own etymology and its documented pairing with prasava (evolutionary proliferation) in classical Sāṃkhya sources; restate Vāk's own documented arc across this series' first eleven parts; examine why a structured twelve-part series closes through return rather than through simple termination; revisit mantra-śāstra's own anticipation of this closing move and dharma's own role as the series' evaluative spine; and document kaivalya, guṇa-pratiprasava, and saṃskāra-śeṣa as the Yoga-Sāṃkhya tradition's own technical vocabulary for what remains once return is complete. The paper's central documentary contribution is ten worked case studies (Sections XII–XXI), one drawn from each major discipline this series has surveyed — vyākaraṇa, nyāya, nāṭyaśāstra's rasa and abhinaya register, yoga-śāstra, arthaśāstra, āyurveda, mantra-śāstra, dharmaśāstra, and this series' own transmission-history — each documenting that discipline's own elaborated technical apparatus folding back into a simpler, prior condition it never actually left. A six-panel interactive deep-dive widget extends this material further: the full twelve-part series mapped as a single diagram; an extended comparative table of the ten case studies; kaivalya and pratiprasava compared across all six darśanas; explicitly bracketed comparison to neighbouring closure-concepts in other traditions; this project's own contemporary offerings surveyed with evenhandedness; and a browsable full-series interactive glossary. A methodological appendix, glossary, footnotes, and bibliography close the paper, which ends not with a further part but with this project's own documented handoff beyond the series itself.</p>
+    <div class="reading-note">
+      <b>Reading Note</b> — This paper presupposes material from across the entire series and is written to be read as its capstone. Readers arriving here directly are pointed, in particular, to Part One's own foundational Vāk material, Part Six's yoga-śāstra citta-vṛtti framework (drawn on directly in Sections VIII–X), Part Nine's mantra-śāstra recursion argument (Section VI), and Part Eleven's dharma material (Section VII). This release delivers this paper's full documented scope — twenty-five core sections, all ten case studies, the complete six-panel widget, and the closing project-wide synthesis — as a single, complete milestone, consistent with the reader's own request for an exhaustive, single-session closing volume.</div>
+  </section>
+
+  <h1 class="sectionhead" id="sec-1">I.</h1>
+  <h2 class="sectiontitle">Restating the Series' Closing Question</h2>
+  <h3>1.1 What Eleven Prior Parts Have Built</h3>
+  <p>This series has, across eleven prior parts, documented an increasingly elaborate apparatus: grammatical rule-systems, logical pramāṇa-frameworks, aesthetic rasa-theory, codified gesture-vocabularies, disciplined attention-practices, statecraft's saptāṅga, medicine's tridoṣa, mantra's own recursive dīkṣā-structure, a documented transmission-history spanning manuscript and epigraph, and dharma's own four-source ethical framework. Each part has added technical depth; none has, on its own, asked what becomes of that accumulated apparatus once it has done its documented work.</p>
+  <h3>1.2 The Question This Paper Poses</h3>
+  <p>This paper's organising question is whether this series' own proliferated apparatus is meant to be carried forward indefinitely as an ever-growing technical inheritance, or whether the tradition's own documented self-understanding — most explicitly in the Sāṃkhya-Yoga material this paper's Sections II–X examine — anticipates a point at which that apparatus folds back into the simpler ground it was always, on this paper's reading, elaborating rather than replacing.</p>
+  <h3>1.3 Scope and Evenhandedness</h3>
+  <p>Consistent with this series' practice throughout, this paper documents pratiprasava primarily as a classical technical concept and applies it as an organising frame for this project's own closing volume; where this paper touches on contemporary application (Tab Panel V) or comparison with other traditions' closure-concepts (Tab Panel IV), it does so with the same explicit bracketing this series has applied consistently since Part Ten.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-2">II.</h1>
+  <h2 class="sectiontitle">Pratiprasava: Etymology and Technical Sense</h2>
+  <h3>2.1 The Root and Its Prefix</h3>
+  <p>Pratiprasava combines prasava (from the root sū, "to bring forth, to generate," carrying the documented general sense of birth, production, or issuing-forth) with the prefix prati- ("back, against, in return"), yielding a documented compound sense of "return-generation" or "involution" — a reverse-directional counterpart to prasava's own forward, generative sense.</p>
+  <h3>2.2 The Term's Documented Technical Home</h3>
+  <p>This paper follows standard scholarship in locating pratiprasava's own most precise technical usage within classical Sāṃkhya-Yoga sources, where it names specifically the guṇas' own documented return to a state of equilibrium (sāmyāvasthā) once their evolutionary proliferation — through mahat, ahaṃkāra, the tanmātras, and the full documented twenty-four-fold Sāṃkhya category-scheme — has served its own purpose for the puruṣa whose experience that proliferation existed to serve.</p>
+  <h3>2.3 Why This Paper Adopts Pratiprasava as Its Organising Term</h3>
+  <p>This paper adopts pratiprasava, rather than a more general term such as "conclusion" or "summary," specifically because the term's own technical sense carries a documented claim this paper wants to make directly: that this series' own closing part is not merely an inventory of what preceded it, but a return in the classical technical sense — the proliferated apparatus folding back into, rather than being set aside from, the single ground it always presupposed.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-3">III.</h1>
+  <h2 class="sectiontitle">Prasava and Pratiprasava: The Documented Sāṃkhya Pair</h2>
+  <h3>3.1 Prasava as This Series' Own Implicit First Movement</h3>
+  <p>This paper reads this series' own first nine parts as documenting, without using the term explicitly until Part Nine, a sustained prasava-movement: Vāk's own proliferation from Part One's undifferentiated ground through discrimination (Part II), affect (Part III), aesthetic and somatic embodiment (Parts IV–V), disciplined attention (Part VI), and specialised, socially and medically extended śāstra (Parts VII–VIII) — a documented forward, generative arc this paper treats as this series' own extended illustration of Sāṃkhya's prasava-concept operating across a psychological and disciplinary, rather than strictly cosmological, register.</p>
+  <h3>3.2 Pratiprasava as This Series' Own Second Movement, Beginning at Part Nine</h3>
+  <p>This paper reads Part Nine's own documented argument — that mantra-śāstra represents Vāk "returning as sound-technology," in that part's own phrase — as the series' own first explicit pratiprasava-movement: a proliferated discipline (mantra) folding back specifically onto Vāk itself as its own object, rather than extending outward into a further new domain as Parts II–VIII had each done in turn.</p>
+  <h3>3.3 Why the Pair Requires Both Movements</h3>
+  <p>This paper notes that classical Sāṃkhya sources document prasava and pratiprasava as a necessary pair rather than as alternatives: proliferation without return produces mere accumulation, while a documented return with nothing first proliferated would have nothing substantive to return — a structural requirement this paper reads as directly explaining why this series required eleven prior parts of sustained proliferation before this twelfth part's own return could be documented with the same specificity Sections XII–XXI now supply.</p>
+  <table class="datatable">
+    <caption>Prasava and Pratiprasava Mapped Onto This Series</caption>
+    <tr><th>Movement</th><th>Sāṃkhya Sense</th><th>This Series' Parts</th></tr>
+    <tr><td>Prasava</td><td>Forward, generative proliferation of the guṇas from equilibrium into differentiated form</td><td>Parts I–VIII (undifferentiated ground through specialised, extended śāstra)</td></tr>
+    <tr><td>Transitional recursion</td><td>Proliferated form first turning back upon its own source as object</td><td>Part IX (mantra-śāstra's recursive dīkṣā-structure)</td></tr>
+    <tr><td>Applied consolidation</td><td>The proliferated apparatus examined historically and evaluatively</td><td>Parts X–XI (transmission-history; dharma as evaluative framework)</td></tr>
+    <tr><td>Pratiprasava</td><td>Full documented return of the proliferated apparatus to its own single ground</td><td>Part XII (this paper)</td></tr>
+  </table>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-4">IV.</h1>
+  <h2 class="sectiontitle">Vāk's Arc Restated: Part One to Part Eleven</h2>
+  <h3>4.1 The Documented Arc in Brief</h3>
+  <p>This section restates, briefly and for readers arriving at this closing volume directly, the documented arc this series has traced: Part One established Vāk as the ground of psychological awareness prior to differentiation; Part Two documented śabda-bheda, the birth of discrimination, as Vāk's own first differentiating movement; Part Three documented the Sāma Veda's own musical elaboration of Vedic recitation as the birth of feeling-toned, affectively coloured cognition; Parts Four and Five documented the Nāṭyaśāstra's own rasa-theory and abhinaya-vocabulary as Vāk's aesthetic and somatic embodiment; Part Six documented yoga-śāstra's citta-vṛtti framework as Vāk's own self-regulating, disciplined-attention register; Parts Seven and Eight documented vyākaraṇa, nyāya, arthaśāstra, and āyurveda as Vāk's proliferation into specialised cognitive and socially extended śāstra; Part Nine documented mantra-śāstra as Vāk's own recursive return as sound-technology; Part Ten documented the historical case studies by which this proliferated apparatus was actually transmitted; and Part Eleven documented dharma as the evaluative framework each prior proliferation already presupposed.</p>
+  <h3>4.2 Why This Paper Restates Rather Than Merely Cites This Arc</h3>
+  <p>This paper restates this arc directly, rather than citing it by section-number alone as earlier parts have done for narrower cross-references, because this closing volume's own argument depends on the arc being held together as a single documented shape rather than as eleven separate documented findings — a shape this paper's Section XXV returns to synthesise fully once the ten case studies (Sections XII–XXI) have supplied this paper's own detailed evidentiary support.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-5">V.</h1>
+  <h2 class="sectiontitle">Why a Twelve-Part Series Closes Rather Than Simply Ends</h2>
+  <h3>5.1 Closure as a Documented Choice, Not a Default</h3>
+  <p>This paper notes that a twelve-part structure could, in principle, simply stop after eleven parts of sustained proliferation without any dedicated closing volume — Part Eleven's own dharma-synthesis could, on a minimal reading, have served as this series' final part. This paper argues, instead, that the pratiprasava-structure this paper documents (Sections II–III) is not an optional coda but a documented structural requirement of the material itself: a tradition whose own technical vocabulary explicitly names and values return (Sections VIII–X) would be inadequately represented by a series that proliferated without ever documenting that same tradition's own account of what follows proliferation.</p>
+  <h3>5.2 Closure Distinguished from Repetition</h3>
+  <p>This paper distinguishes its own closing method from mere repetition of prior parts' content: where Part Eleven's own recap sections (Section XL) primarily consolidated that paper's own internal argument, this paper's closing method instead applies a single new organising concept (pratiprasava) across the entire prior series, producing genuinely new documented readings of familiar material — most directly in the ten case studies (Sections XII–XXI), each of which revisits material from a specific prior part under this paper's own new pratiprasava-lens rather than simply restating that part's own original argument.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-6">VI.</h1>
+  <h2 class="sectiontitle">Mantra-Śāstra's Own Anticipation of Closure</h2>
+  <h3>6.1 Part Nine's Own Documented Foreshadowing</h3>
+  <p>This paper reads Part Nine's own closing material — already summarised in this paper's Section 3.2 — as having anticipated this paper's own closing argument more directly than any other prior part: mantra-śāstra's documented recursive structure, in which Vāk itself becomes the object of a Vāk-based technology (mantra), already modelled, at the scale of a single discipline, the whole-series pattern this paper now documents at the scale of the entire twelve-part project.</p>
+  <h3>6.2 Japa and Ajapā, Restated for This Paper's Purpose</h3>
+  <p>Part Nine documented japa (repeated mantra-recitation) and its own further documented refinement into ajapā-japa (a state in which repetition is held to continue spontaneously, without deliberate effort) as mantra-śāstra's own internal illustration of proliferated technique folding back into effortless, ground-level function — a specific documented case this paper revisits in full as Case Study Eight (Section XX), read now explicitly through this paper's own pratiprasava-vocabulary rather than Part Nine's original recursion-vocabulary alone.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-7">VII.</h1>
+  <h2 class="sectiontitle">Dharma as the Series' Evaluative Spine, Recapitulated</h2>
+  <h3>7.1 Restating Part Eleven's Central Claim</h3>
+  <p>Part Eleven documented dharma not as one further proliferated discipline alongside vyākaraṇa, nyāya, arthaśāstra, and the rest, but as the evaluative framework each of those disciplines already presupposed in its own local register — vyākaraṇa's sādhu/asādhu distinction, nyāya's valid/invalid inference, arthaśāstra's proper/corrupt statecraft, āyurveda's balance/disorder, each read by Part Eleven as a local application of dharma's own more general evaluative structure.</p>
+  <h3>7.2 Why Dharma Belongs in This Paper's Own Pratiprasava-Frame</h3>
+  <p>This paper extends Part Eleven's own finding one step further: if dharma is the evaluative standard each proliferated discipline already presupposed, then dharma's own documented function was never itself a further proliferation requiring its own subsequent return, but rather the standard by which this paper can now assess whether each of the ten case studies below (Sections XII–XXI) documents a return that upholds — rather than corrodes — the specific discipline in question, applying dharma's own root sense (Part Eleven, Section 2.1) directly to this paper's own closing argument.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-8">VIII.</h1>
+  <h2 class="sectiontitle">Kaivalya and Pratiprasava: The Yoga-Sāṃkhya Terminus</h2>
+  <h3>8.1 Kaivalya Defined</h3>
+  <p>Patañjali's Yoga-Sūtras document kaivalya (literally, "aloneness" or "isolation") as the tradition's own technical term for the puruṣa's documented final condition once the guṇas' own evolutionary purpose — furnishing experience and eventual liberation for the puruṣa — has been fulfilled and the guṇas accordingly return (pratiprasava) to their own equilibrium, no longer bound to a specific puruṣa's experience.</p>
+  <h3>8.2 The Documented Relationship Between Kaivalya and Dharma-Megha-Samādhi</h3>
+  <p>Part Eleven's own Section 9.2 already documented dharma-megha-samādhi ("the cloud of dharma" concentration) as the Yoga-Sūtras' own penultimate documented state, in which accumulated practice produces spontaneous alignment with dharma. This paper documents kaivalya as the state immediately following dharma-megha-samādhi in the Yoga-Sūtras' own sequence, with pratiprasava named explicitly as the guṇas' own accompanying process — establishing, on this paper's reading, a direct and textually documented link between Part Eleven's own closing ethical material and this paper's own closing structural concept.</p>
+  <h3>8.3 Why This Paper Treats Kaivalya as Structurally, Not Devotionally, Significant</h3>
+  <p>Consistent with this series' method throughout, this paper documents kaivalya as a technical philosophical terminus within a specific classical system rather than advocating it as a personal goal for the reader; this paper's own interest is in kaivalya's documented structural role as the clearest classical textual case of the return-pattern this paper's ten case studies trace across genuinely distinct, non-devotional disciplines as well.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-9">IX.</h1>
+  <h2 class="sectiontitle">Guṇa-Pratiprasava: The Return of the Guṇas</h2>
+  <h3>9.1 The Three Guṇas, Briefly Restated</h3>
+  <p>Classical Sāṃkhya sources document prakṛti's own constitution from three guṇas — sattva, rajas, and tamas — whose documented differential combination, once disturbed from an original equilibrium, is held to generate the entire evolved cosmos, including the cognitive apparatus (buddhi, ahaṃkāra, manas) this series' own Part Six drew on directly for its citta-vṛtti material.</p>
+  <h3>9.2 Guṇa-Pratiprasava as the Specific Mechanism</h3>
+  <p>This paper documents guṇa-pratiprasava as the specific mechanism by which the guṇas, once their evolutionary purpose for a given puruṣa is fulfilled, are held to withdraw from their own differentiated, evolved condition back into equilibrium — the technical process underlying kaivalya (Section VIII) at the level of prakṛti's own constituents rather than at the level of the puruṣa's own experiential status.</p>
+  <h3>9.3 Why This Paper Distinguishes Guṇa-Pratiprasava From Kaivalya</h3>
+  <p>This paper is careful to document these as distinct, if closely related, technical terms: kaivalya names the puruṣa's own resulting condition, while guṇa-pratiprasava names the parallel process undergone by prakṛti's own constituents — a distinction this paper reads as directly informing its own ten case studies' method (Section XI), each of which similarly distinguishes a discipline's own apparatus (comparable to the guṇas) from the simpler condition that apparatus is documented to serve (comparable to the puruṣa's own kaivalya).</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-10">X.</h1>
+  <h2 class="sectiontitle">Saṃskāra-Śeṣa: What Remains After Return</h2>
+  <h3>10.1 The Documented Problem of Residue</h3>
+  <p>This paper notes a documented technical problem classical sources address directly: if the guṇas fully return to equilibrium (Section IX), does anything of the prior proliferated experience remain, or is return equivalent to erasure? Classical Yoga sources document the term saṃskāra-śeṣa ("remainder of impressions") for exactly this question, acknowledging that subtle impressions from prior experience are held to persist even through substantial phases of practice, distinct from the guṇas' own more complete withdrawal at kaivalya itself.</p>
+  <h3>10.2 Why This Matters for This Paper's Own Closing Argument</h3>
+  <p>This paper treats saṃskāra-śeṣa as directly relevant to how this closing volume itself should be read: this paper's own argument is not that return renders the prior eleven parts' own accumulated technical apparatus void or forgotten, but that the apparatus itself is retained precisely as a documented residue — available, transmissible, and, as this paper's Section XXIV argues, still useful — even once its own further generative proliferation is no longer this project's own primary purpose.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-11">XI.</h1>
+  <h2 class="sectiontitle">Ten Case Studies — Introduction to Method</h2>
+  <h3>11.1 Why Ten Case Studies, One Per Major Domain</h3>
+  <p>Sections XII–XXI document ten case studies, each drawn from a distinct discipline this series has surveyed across Parts II, III–V, VI, VII, VIII (two disciplines), IX, X, and XI, chosen specifically so that every major documented domain this series has proliferated through receives its own dedicated pratiprasava-reading rather than being folded, as Sections I–X have so far done, into this paper's own more general argument alone.</p>
+  <h3>11.2 The Shared Structure Each Case Study Follows</h3>
+  <p>Each case study below follows a documented three-part structure: first, a brief restatement of the discipline's own elaborated technical apparatus, as already documented in that discipline's own originating part; second, documentation of a specific, textually or traditionally attested terminus at which that apparatus is held to fold back into a simpler, prior condition; third, a short arc-note explicitly naming which prior part of this series the case study extends. This shared structure is intended to make the ten case studies directly comparable, a comparability Tab Panel II extends further into a single consolidated table.</p>
+  <h3>11.3 A Documented Caution on Evidentiary Status</h3>
+  <p>Consistent with this series' own methodological appendices (Part Ten, Part Eleven), this paper documents each case study's own textual or traditional attestation where available, while noting explicitly, as this paper's own Methodological Appendix restates in full, that the pratiprasava-framing applied uniformly across all ten cases is this paper's own structural-synthetic proposal rather than a claim that every source cited below uses the term pratiprasava explicitly in the specific technical Sāṃkhya sense Section II documents.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section id="sec-casestudies" class="context-box">
+    <h3>Ten Documented Case Studies in Full-Circle Return</h3>
+    <p>The ten case studies below (Sections XII–XXI) apply this paper's own pratiprasava-frame to one discipline from each major domain this series has surveyed. Each case study is self-contained and independently readable, while together they supply this paper's own principal documentary support for the closing synthesis in Section XXV.</p>
+  </section>
+
+  <h1 class="sectionhead" id="sec-12">XII.</h1>
+  <h2 class="sectiontitle">Case Study One — Vyākaraṇa: The Pratyāhāra-Sūtras Returning to Unstruck Sound</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 1 of 10 · Vyākaraṇa</span>
+    <h4>Pāṇini's Fourteen Sūtras and Their Own Documented Traditional Origin</h4>
+    <p>Part Seven documented Pāṇini's Aṣṭādhyāyī and its own elaborate technical apparatus, including the pratyāhāra-sūtras (the fourteen condensed phoneme-inventories, traditionally called the Māheśvara-Sūtras, from which Pāṇini's entire grammar is documented to derive its own abbreviatory notation). This paper documents the tradition's own account, recorded by later grammatical commentators, that these fourteen sūtras were themselves received rather than composed — sounded, in the tradition's own account, from Śiva's drum during a dance, prior to and independent of Pāṇini's own subsequent systematic elaboration.</p>
+    <p>This paper reads this documented traditional account as vyākaraṇa's own built-in pratiprasava-structure: the grammar's most technical, condensed, rule-generating apparatus (the pratyāhāras) is held by the tradition's own self-understanding to originate not from grammatical analysis itself but from a prior, undifferentiated sounding — Vāk in something closer to Part One's own original sense — which Pāṇini's own subsequent technical work is understood to elaborate rather than originate. The grammar's most abstract formal apparatus thus documents its own return to, rather than departure from, unstruck sound.</p>
+    <p class="cs-arc">Extends: Part Seven (vyākaraṇa's proliferated technical apparatus) and Part One (Vāk as pre-differentiated ground).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-13">XIII.</h1>
+  <h2 class="sectiontitle">Case Study Two — Nyāya: Tarka Returning to Pramā</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 2 of 10 · Nyāya</span>
+    <h4>The Elaborated Inference-Apparatus and Its Own Documented Simple Terminus</h4>
+    <p>Part Seven documented Nyāya's own elaborate pramāṇa-framework and its later Navya-Nyāya technical refinement (Part Ten, Section 9.3), including tarka (hypothetical reasoning used to test and eliminate rival explanations before a definite inference is drawn). This paper documents tarka's own explicitly instrumental, rather than final, documented status within the Nyāya-Sūtras themselves: tarka is classified not as an independent pramāṇa (means of valid knowledge) alongside perception, inference, comparison, and testimony, but as an auxiliary procedure whose own entire documented function is to assist the production of pramā — direct, correct cognition itself.</p>
+    <p>This paper reads Nyāya's own documented classification as a built-in pratiprasava-structure directly comparable to Case Study One: however elaborate the technical apparatus of hypothetical reasoning and its later Navya-Nyāya refinement becomes, that apparatus is documented, by the tradition's own internal classification, to exist for the sake of a simpler terminus — correct cognition itself — rather than to accumulate as an end in its own right, echoing Part Eleven's own Section 8.2 finding that Nyāya's contribution to dharma-theory was methodological rather than substantive.</p>
+    <p class="cs-arc">Extends: Part Seven (nyāya's proliferated pramāṇa-apparatus) and Part Ten, Section 9.3 (Navya-Nyāya's technical refinement).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-14">XIV.</h1>
+  <h2 class="sectiontitle">Case Study Three — Nāṭyaśāstra: Rasa-Niṣpatti as the Return of the Many to the One</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 3 of 10 · Nāṭyaśāstra (Rasa)</span>
+    <h4>Vibhāva, Anubhāva, and Vyabhicāribhāva Folding Into a Single Tasting</h4>
+    <p>Parts Four and Five documented the Nāṭyaśāstra's own elaborated technical vocabulary for aesthetic experience: vibhāvas (determinants), anubhāvas (consequents), and vyabhicāribhāvas (transitory states), a multiplied technical apparatus this series' own Part Four documented at considerable taxonomic length. This paper documents rasa-niṣpatti (the arising of rasa) as the tradition's own name for the documented process by which this entire multiplied apparatus, correctly combined, is held to produce not a multiplied experience but a single, unified aesthetic tasting (rasāsvāda) in the spectator.</p>
+    <p>This paper reads rasa-niṣpatti as this series' own clearest aesthetic-register case of pratiprasava: the Nāṭyaśāstra's own elaborated component-vocabulary exists, on the tradition's own account, specifically in order to produce a single, non-composite experiential state that does not itself present as composite to the spectator experiencing it — the many technical determinants returning, in the moment of actual aesthetic experience, to a documented felt unity.</p>
+    <p class="cs-arc">Extends: Part Four (rasa-theory's own proliferated technical vocabulary).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-15">XV.</h1>
+  <h2 class="sectiontitle">Case Study Four — Abhinaya: Codified Gesture Returning to Sattva</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 4 of 10 · Nāṭyaśāstra (Abhinaya)</span>
+    <h4>The Documented Fourfold Abhinaya and Its Own Sāttvika Terminus</h4>
+    <p>Part Five documented the Nāṭyaśāstra's own fourfold abhinaya classification — āṅgika (bodily), vācika (verbal), āhārya (costume and makeup), and sāttvika (psycho-physical, involuntary) — with the first three documented as deliberately learned and executed technique, codified to a considerable degree of specificity (Part Five's own hasta-mudrā and comparable material).</p>
+    <p>This paper documents sāttvika abhinaya's own distinct documented character: unlike the other three categories, sāttvika abhinaya (involuntary physical signs of genuine inner feeling, such as tears, horripilation, or change of voice) is held by the Nāṭyaśāstra's own textual tradition to be, in its most complete form, not a technique to be executed at all but a spontaneous consequence of the actor's own genuinely absorbed inner state. This paper reads the trained actor's own documented progression — years of deliberate, codified technical practice in āṅgika, vācika, and āhārya abhinaya — as existing specifically to produce the conditions under which sāttvika abhinaya can arise spontaneously, technique returning to a state the technique itself cannot directly manufacture.</p>
+    <p class="cs-arc">Extends: Part Five (abhinaya's own codified technical vocabulary).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-16">XVI.</h1>
+  <h2 class="sectiontitle">Case Study Five — Yoga-Śāstra: The Eight Limbs Returning to Kaivalya</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 5 of 10 · Yoga-Śāstra</span>
+    <h4>Aṣṭāṅga-Yoga's Own Documented Sequential Structure</h4>
+    <p>Part Six documented Patañjali's own eight-limbed (aṣṭāṅga) practice-sequence — yama, niyama, āsana, prāṇāyāma, pratyāhāra, dhāraṇā, dhyāna, and samādhi — as yoga-śāstra's own elaborated technical apparatus for regulating citta-vṛtti. This paper documents the sequence's own explicit textual culmination, already partly examined in this paper's Section VIII, in kaivalya, reached via dharma-megha-samādhi and guṇa-pratiprasava.</p>
+    <p>This paper reads the aṣṭāṅga-sequence as this series' own most textually explicit case of documented pratiprasava, precisely because the term itself, unlike in Case Studies One through Four, is directly attested in the source-text's own technical vocabulary rather than being this paper's own extension of a documented but differently named pattern: the eight limbs' own considerable practical elaboration is held, by the Yoga-Sūtras' own explicit sequence, to terminate in the guṇas' own documented return, making this case study this paper's own clearest anchor-case for the other nine.</p>
+    <p class="cs-arc">Extends: Part Six (yoga-śāstra's proliferated eight-limbed apparatus) and this paper's own Sections VIII–X.</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-17">XVII.</h1>
+  <h2 class="sectiontitle">Case Study Six — Arthaśāstra: The Saptāṅga Returning to Prajā-Sukha</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 6 of 10 · Arthaśāstra</span>
+    <h4>The Seven-Limbed State and Its Own Documented Purpose-Clause</h4>
+    <p>Part Eight documented Kauṭilya's own saptāṅga theory of the state (svāmin, amātya, janapada, durga, kośa, daṇḍa, mitra) as arthaśāstra's own elaborated technical apparatus for statecraft, further examined in Part Eleven, Section XIII for its own documented tension with dharmaśāstra. This paper documents the Arthaśāstra's own repeatedly stated purpose-clause, in which the king's own welfare is explicitly defined in terms of, rather than as separate from, the subjects' own welfare (prajā-sukha) — the elaborate seven-limbed apparatus of statecraft documented as instrumental to, rather than the final measure of, a documented condition simpler than the apparatus itself.</p>
+    <p>This paper reads this purpose-clause as arthaśāstra's own built-in pratiprasava-structure: however elaborate the state's own seven limbs and their documented interdependence become in Kauṭilya's own technical treatment, the entire apparatus is defined, within the text's own stated terms, as existing for a single, simpler documented end — the flourishing of the ruled rather than the accumulation of state-apparatus for its own sake — directly informing Part Eleven's own Section 34.1 synthesis-attempt between artha and dharma.</p>
+    <p class="cs-arc">Extends: Part Eight (arthaśāstra's saptāṅga) and Part Eleven, Sections XIII, 34.1 (rāja-dharma, artha-dharma synthesis).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-18">XVIII.</h1>
+  <h2 class="sectiontitle">Case Study Seven — Āyurveda: Tridoṣa Returning to Svāsthya</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 7 of 10 · Āyurveda</span>
+    <h4>The Elaborated Diagnostic Apparatus and Its Own Documented Simple Terminus</h4>
+    <p>Part Eight documented āyurveda's own elaborated tridoṣa framework (vāta, pitta, kapha) together with its own considerable further documented diagnostic and constitutional sub-classification. This paper documents classical āyurvedic sources' own explicit definition of health itself, svāsthya (literally, "one's own state" or "abiding in one's own nature"), not as an additional, further-elaborated technical category alongside the tridoṣa apparatus, but as the documented simple condition — doṣa, dhātu, and mala in proper balance, together with a settled state of the senses, mind, and self — that the entire diagnostic apparatus exists specifically to identify, restore, and protect.</p>
+    <p>This paper reads svāsthya's own etymological transparency (sva-, "own" + -stha, "standing, abiding") as directly anticipating this paper's own Section XXII (svarūpa-pratiṣṭhā), and reads āyurveda's own elaborated diagnostic technical apparatus as existing, in a documented structural parallel to Case Study Six, not to multiply categories indefinitely but to return the patient to a single, comparatively simple abiding condition the apparatus itself does not replace.</p>
+    <p class="cs-arc">Extends: Part Eight (āyurveda's tridoṣa apparatus) and anticipates this paper's Section XXII.</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-19">XIX.</h1>
+  <h2 class="sectiontitle">Case Study Eight — Mantra-Śāstra: Japa Returning to Ajapā</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 8 of 10 · Mantra-Śāstra</span>
+    <h4>Repetition's Own Documented Return to Spontaneity</h4>
+    <p>This paper's Section 6.2 already introduced japa and ajapā-japa as Part Nine's own key documented technical pair. This case study documents the pattern in full: japa (deliberate, counted, effortful mantra-repetition, typically using a mālā as Part Nine documented) is held, across the documented sādhanā-literature this series has drawn on since Part Nine, to develop over sustained practice into ajapā-japa, a state in which the mantra is held to continue of its own accord, without deliberate counting or conscious effort, the practitioner's own attention no longer required to sustain the repetition.</p>
+    <p>This paper reads ajapā-japa as this series' single most literal documented instance of pratiprasava in its own strict etymological sense (Section 2.1): prasava (the deliberate, effortful "bringing forth" of repeated sound) returning specifically to a state the tradition itself names using the same root with a negating prefix (a-japā, "non-repetition," despite the repetition's own continuing presence) — technique so thoroughly returned to spontaneity that the tradition's own vocabulary registers it as, in a carefully qualified sense, no longer technique at all.</p>
+    <p class="cs-arc">Extends: Part Nine (mantra-śāstra's recursive dīkṣā-structure) and this paper's Section VI.</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-20">XX.</h1>
+  <h2 class="sectiontitle">Case Study Nine — Dharmaśāstra: Prāyaścitta Returning to Śuddhi</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 9 of 10 · Dharmaśāstra</span>
+    <h4>Graded Expiation and Its Own Documented Restorative Purpose</h4>
+    <p>Part Eleven, Section XVIII documented prāyaścitta (formal expiatory procedure) as dharmaśāstra's own graded, structured mechanism for addressing already-committed adharma, ranging in documented severity from minor ritual observance to considerably more demanding prescribed procedure. This paper documents prāyaścitta's own explicit textual purpose-clause: the entire graded apparatus is held, across the dharmaśāstra digest tradition, to exist specifically to restore the transgressor to śuddhi (purity, or unblemished standing) — the documented condition understood to have obtained prior to the transgression itself.</p>
+    <p>This paper reads prāyaścitta as dharmaśāstra's own built-in pratiprasava-structure, directly parallel to Case Study Seven: however graded and procedurally elaborate the expiatory apparatus becomes across the digest tradition (Part Eleven, Section 18.1), its own documented purpose is not to add a further permanent mark or category to the transgressor's own standing, but to return that standing to the simpler, prior condition transgression had disturbed — a documented restorative rather than merely punitive structure this paper reads as directly continuous with Part Eleven's own Section 18.2 finding that the tradition designed prāyaścitta expecting transgression to occur.</p>
+    <p class="cs-arc">Extends: Part Eleven, Sections XVIII, 18.1–18.2 (prāyaścitta as corrective mechanism).</p>
+  </div>
+
+  <h1 class="sectionhead" id="sec-21">XXI.</h1>
+  <h2 class="sectiontitle">Case Study Ten — This Series' Own Transmission-History Returning to Direct Presence</h2>
+  <div class="casestudy">
+    <span class="cs-num">Case Study 10 of 10 · Transmission-History</span>
+    <h4>Manuscript and Commentarial Apparatus Returning to Guru-Śiṣya Presence</h4>
+    <p>Part Ten documented this tradition's own elaborate transmission-apparatus at considerable length: manuscript culture, the maṭha's own multi-disciplinary institutional structure, critical-edition method, and the extensive documented commentarial layering this series has traced across vyākaraṇa, nyāya, dharmaśāstra, and mantra-śāstra alike. This paper documents that this entire apparatus is itself consistently described, within the tradition's own self-understanding, as existing in service of a documented relationship simpler than the apparatus itself: the direct guru-śiṣya (teacher-student) transmission, in which a text's own written and commentarial form is held to function as a support for, rather than a substitute for, direct oral and personal instruction.</p>
+    <p>This paper reads this series' own transmission-history material as its own final, self-referential case study: the manuscripts, commentaries, and critical editions Part Ten documented at such evidentiary length are themselves, on the tradition's own account, a documented pratiprasava-structure — an elaborated apparatus existing to support and eventually return to the simpler, direct relationship of instruction the apparatus itself cannot fully replace, a finding this paper's own Section XXIII extends directly to this series' own project as a whole.</p>
+    <p class="cs-arc">Extends: Part Ten (this series' own transmission-history and institutional material) and this paper's Section XXIII.</p>
+  </div>
+
+  <div class="ornament">✦</div>
+
+  <h1 class="sectionhead" id="sec-22">XXII.</h1>
+  <h2 class="sectiontitle">Svarūpa-Pratiṣṭhā: Resting in One's Own Nature</h2>
+  <h3>22.1 The Term Defined</h3>
+  <p>This paper documents svarūpa-pratiṣṭhā (literally, "abiding" or "being established in one's own form or nature") as a further classical technical term, documented across Yoga and Vedāntic sources alike, naming the condition a fully completed pratiprasava is held to leave behind — a term this paper's Section XVIII already anticipated through āyurveda's own svāsthya.</p>
+  <h3>22.2 Why This Paper Places This Section After the Ten Case Studies</h3>
+  <p>This paper places its own documentation of svarūpa-pratiṣṭhā directly after the ten case studies rather than earlier, alongside kaivalya (Section VIII), specifically because the term's own force is best documented once the case studies have shown the same structural pattern — apparatus returning to a simpler, prior ground — operating identically across ten genuinely distinct technical vocabularies: svarūpa-pratiṣṭhā is this paper's own proposed name for what all ten case studies' distinct termini (pramā, rasāsvāda, sāttvika spontaneity, kaivalya, prajā-sukha, svāsthya, ajapā, śuddhi, and direct guru-śiṣya presence) share as a documented common structural feature, even while each remains, as Section 11.3 cautions, its own distinct technical concept within its own distinct discipline.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-23">XXIII.</h1>
+  <h2 class="sectiontitle">This Series' Own Documented Self-Application</h2>
+  <h3>23.1 Extending Case Study Ten to the Series Itself</h3>
+  <p>Case Study Ten (Section XXI) documented this tradition's own transmission-apparatus as itself a pratiprasava-structure. This section extends that finding explicitly to this series' own status as a documented instance of that same apparatus: this series' forty-plus GitHub repositories, its seventeen research subdomains, and its twelve-part Series B structure itself are, on this paper's own reading, a further instance of the elaborated technical apparatus Case Study Ten describes — freely accessible, richly cross-referenced, and, like the manuscripts and commentaries Part Ten documented, existing in service of something simpler than the apparatus itself.</p>
+  <h3>23.2 What This Series Was Always, on This Paper's Reading, Elaborating</h3>
+  <p>This paper reads this series' own twelve-part structure as having elaborated, across its own considerable technical apparatus, a single documented claim already present in compressed form in Part One: that Vāk names a ground of psychological awareness prior to and underlying the very differentiation this series' own eleven subsequent parts proceeded to document at length. This paper's own closing claim is that Series B's own accumulated technical apparatus is not a departure from that original compressed claim but its own extended, documented unpacking — a series-length instance of prasava (Section 3.1) now folding back, in this twelfth part, into explicit pratiprasava.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-24">XXIV.</h1>
+  <h2 class="sectiontitle">What This Project Hands Forward</h2>
+  <h3>24.1 Return Is Not Discontinuation</h3>
+  <p>Consistent with Section 10.2's own saṃskāra-śeṣa argument, this paper is careful to document that this series' own closing volume does not imply that Cultural Musings' own broader seventeen-subdomain research project discontinues once Series B's own twelve parts are complete: Series A (running in parallel, most recently with its own Part Three on Prakṛti-Puruṣa) and this project's other documented research lines — the Lalitā Sahasranāma commentary project, the mātṛkā-phoneme material, the Śāstrodbhavaḥ series, and the broader outreach and proposal work — continue independently of Series B's own specific twelve-part arc.</p>
+  <h3>24.2 What Series B Specifically Hands Forward</h3>
+  <p>This paper documents Series B's own specific, completed contribution as a freely accessible, cross-referenced twelve-part account of Vāk's documented psychological arc from pre-differentiated ground, through proliferated śāstra, to documented ethical evaluation and, in this closing volume, explicit return — available as a stable reference-structure for this project's own continuing research lines to draw upon, in the same documented supporting role Case Study Ten (Section XXI) and Section 23.1 describe for transmission-apparatus generally.</p>
+  <h3>24.3 An Explicit Invitation Rather Than a Closed Conclusion</h3>
+  <p>Consistent with this series' evenhandedness practice throughout, this paper closes its own substantive argument not by claiming pratiprasava as this material's own single necessary reading, but by offering it as this paper's own considered, documented proposal for how this series' twelve parts cohere — an invitation to further engagement with the primary sources this paper and its eleven predecessors have consistently cited, rather than a final, closed verdict on their own meaning.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <h1 class="sectionhead" id="sec-25">XXV.</h1>
+  <h2 class="sectiontitle">Synthesis: The Twelve Parts as a Single Argument</h2>
+  <h3>25.1 Consolidating the Full Series</h3>
+  <p>This section consolidates Series B's own twelve parts into a single closing statement before the six-panel deep-dive widget below extends this paper's own treatment further.</p>
+  <table class="datatable">
+    <caption>Series B's Twelve Parts as a Single Documented Argument</caption>
+    <tr><th>Movement</th><th>Parts</th><th>This Paper's Own Reading</th></tr>
+    <tr><td>Ground</td><td>I</td><td>Vāk established as pre-differentiated psychological awareness</td></tr>
+    <tr><td>Proliferation (prasava)</td><td>II–VIII</td><td>Vāk differentiates into discrimination, affect, aesthetic and somatic embodiment, disciplined attention, and specialised, socially extended śāstra</td></tr>
+    <tr><td>Recursive turn</td><td>IX</td><td>Vāk returns explicitly upon itself as mantra-śāstra's own object</td></tr>
+    <tr><td>Applied consolidation</td><td>X–XI</td><td>The proliferated apparatus examined historically (transmission) and evaluatively (dharma)</td></tr>
+    <tr><td>Return (pratiprasava)</td><td>XII</td><td>This paper — the full apparatus documented folding back into its own single ground, across ten case studies</td></tr>
+  </table>
+  <p>This paper's own closing synthesis is that Series B's twelve parts, read together, document a single sustained argument rather than twelve independent studies loosely joined by shared vocabulary: Vāk proliferates because psychological awareness genuinely differentiates into discrimination, feeling, embodiment, discipline, and specialised technical cognition; that proliferation genuinely requires historical transmission-apparatus and an evaluative standard to remain coherent across time; and the entire resulting structure is, on the documented evidence this paper's ten case studies supply, itself already understood within the tradition's own technical vocabulary as existing to return, apparatus intact, to the single ground from which it never actually departed.</p>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section id="tabwidget-anchor" class="context-box">
+    <h3>The Six-Panel Deep-Dive</h3>
+    <p>The interactive widget below extends this paper's core argument into six further, explicitly bounded areas of depth: the full twelve-part series mapped as a single diagram; an extended comparative table of the ten case studies; kaivalya and pratiprasava compared across all six darśanas; explicitly bracketed comparison to neighbouring closure-concepts in other traditions; this project's own contemporary offerings surveyed with evenhandedness; and a browsable full-series interactive glossary. Use the tab controls to move between panels.</p>
+  </section>
+
+  <div class="tabwidget">
+    <div class="tabwidget-head">
+      <span class="tab-badge">Interactive · Six Panels</span>
+      <h3>Pratiprasava — Deep-Dive Tabs</h3>
+      <p>Each panel supplies material at a level of depth beyond this paper's twenty-five core sections and ten case studies. Panels are independently navigable and do not require sequential reading.</p>
+    </div>
+    <div class="tab-buttons" role="tablist">
+      <button class="tab-btn active" data-tab="t1">I · Full Series Mapped</button>
+      <button class="tab-btn" data-tab="t2">II · Ten Case Studies Compared</button>
+      <button class="tab-btn" data-tab="t3">III · Kaivalya Across Six Darśanas</button>
+      <button class="tab-btn" data-tab="t4">IV · Comparative Closure-Concepts</button>
+      <button class="tab-btn" data-tab="t5">V · This Project's Forward Offerings</button>
+      <button class="tab-btn" data-tab="t6">VI · Full-Series Glossary</button>
+    </div>
+    <div class="tab-panels">
+
+      <div class="tab-panel active" id="t1">
+        <h4>The Full Twelve-Part Series, Mapped as a Single Diagram</h4>
+        <p>This panel consolidates the partmap tables from all twelve parts into a single documented reference, restating each part's own psychological stage and focus alongside this paper's own movement-classification (Section 25.1), and then extends that reference across three further dimensions: each part's own core technical vocabulary, its own primary textual anchor, and the specific documented thread this paper's own case studies (Sections XII–XXI) draw from it. Read together, these four tables are offered as a single consolidated map of the entire series, sufficient on its own for a reader to reconstruct this series' full argument without returning to each of the eleven prior parts individually.</p>
+
+        <h4 style="margin-top:30px;">1. The Twelve Parts, Movement and Focus</h4>
+        <table class="datatable">
+          <caption>Series B, Parts I–XII, Fully Mapped by Psychological Stage and Movement</caption>
+          <tr><th>Part</th><th>Psychological Stage</th><th>Focus</th><th>Movement</th></tr>
+          <tr><td>I</td><td>Pre-differentiated awareness</td><td>Vāk as the Ground of Psychological Awareness</td><td>Ground</td></tr>
+          <tr><td>II</td><td>Differentiation / discernment</td><td>Śabda-Bheda: The Birth of Discrimination</td><td>Prasava</td></tr>
+          <tr><td>III</td><td>Feeling-toned cognition</td><td>Sāma Veda and the Birth of Affect</td><td>Prasava</td></tr>
+          <tr><td>IV</td><td>Aesthetic embodiment</td><td>Nāṭyaśāstra I: Rasa</td><td>Prasava</td></tr>
+          <tr><td>V</td><td>Somatic cognition</td><td>Nāṭyaśāstra II: Abhinaya</td><td>Prasava</td></tr>
+          <tr><td>VI</td><td>Self-regulation / will</td><td>Yoga-Śāstra: Citta-Vṛtti</td><td>Prasava</td></tr>
+          <tr><td>VII</td><td>Specialised cognition</td><td>Proliferation I: Vyākaraṇa, Nyāya</td><td>Prasava</td></tr>
+          <tr><td>VIII</td><td>Social/embodied extension</td><td>Proliferation II: Arthaśāstra, Āyurveda</td><td>Prasava</td></tr>
+          <tr><td>IX</td><td>Recursive self-application</td><td>Mantra-Śāstra: Vāk's Recursive Return</td><td>Recursive turn</td></tr>
+          <tr><td>X</td><td>Applied/historical synthesis</td><td>Case Studies in Śabda-to-Śāstra Transmission</td><td>Applied consolidation</td></tr>
+          <tr><td>XI</td><td>Ethical-metaphysical synthesis</td><td>Dharma and Adharma</td><td>Applied consolidation</td></tr>
+          <tr><td>XII</td><td>Closing return</td><td>Pratiprasava (this paper)</td><td>Pratiprasava</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">2. Core Technical Vocabulary Introduced Per Part</h4>
+        <p>Each part of this series introduced its own governing technical vocabulary, most of which this paper has drawn on directly across its twenty-five sections and ten case studies. This table documents that vocabulary part by part, so that a reader can trace exactly where any given term this paper uses first enters the series.</p>
+        <table class="datatable">
+          <caption>Governing Technical Vocabulary by Part</caption>
+          <tr><th>Part</th><th>Core Terms Introduced</th></tr>
+          <tr><td>I</td><td>Vāk, avyakta (the unmanifest), pratyakṣa-pūrva (prior-to-perception) awareness</td></tr>
+          <tr><td>II</td><td>Śabda-bheda, vikalpa (conceptual construction), nāma-rūpa (name-and-form)</td></tr>
+          <tr><td>III</td><td>Sāman, gāna (melodic elaboration), bhāva (feeling-tone) in its earliest documented Vedic-adjacent sense</td></tr>
+          <tr><td>IV</td><td>Rasa, vibhāva, anubhāva, vyabhicāribhāva, sthāyibhāva (the stable underlying emotion)</td></tr>
+          <tr><td>V</td><td>Abhinaya (fourfold), hasta-mudrā, sāttvika bhāva</td></tr>
+          <tr><td>VI</td><td>Citta-vṛtti, klista/aklista, aṣṭāṅga-yoga, samādhi</td></tr>
+          <tr><td>VII</td><td>Sādhu/asādhu, pratyāhāra-sūtra, pramāṇa, tarka, vyāpti (invariable concomitance)</td></tr>
+          <tr><td>VIII</td><td>Saptāṅga, daṇḍanīti, tridoṣa, dhātu, mala, ojas</td></tr>
+          <tr><td>IX</td><td>Dīkṣā, japa, ajapā-japa, mantra-caitanya (mantric consciousness)</td></tr>
+          <tr><td>X</td><td>Paramparā, maṭha, pāṭha-bheda (textual variant), critical-edition method</td></tr>
+          <tr><td>XI</td><td>Dharma, adharma, svadharma, sāmānya-dharma, āpad-dharma, prāyaścitta</td></tr>
+          <tr><td>XII</td><td>Prasava, pratiprasava, kaivalya, guṇa-pratiprasava, saṃskāra-śeṣa, svarūpa-pratiṣṭhā</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">3. Primary Textual Anchor Per Part</h4>
+        <p>This series has, across its twelve parts, drawn on a documented and largely non-overlapping set of primary textual traditions, each part anchoring its own argument in a specific textual family even where later parts (most visibly Part Ten and this paper) draw cross-referentially on several at once.</p>
+        <table class="datatable">
+          <caption>Primary Textual Anchor by Part</caption>
+          <tr><th>Part</th><th>Primary Textual Family</th></tr>
+          <tr><td>I</td><td>Ṛgvedic Vāk material (most directly the Vāk-Sūkta), Upaniṣadic ground-of-awareness passages</td></tr>
+          <tr><td>II</td><td>Vedic phonetic and śikṣā literature; early vyākaraṇa proto-material</td></tr>
+          <tr><td>III</td><td>Sāma Veda saṃhitā and gāna literature</td></tr>
+          <tr><td>IV–V</td><td>Bharata's Nāṭyaśāstra</td></tr>
+          <tr><td>VI</td><td>Patañjali's Yoga-Sūtras</td></tr>
+          <tr><td>VII</td><td>Pāṇini's Aṣṭādhyāyī; Gautama's Nyāya-Sūtras</td></tr>
+          <tr><td>VIII</td><td>Kauṭilya's Arthaśāstra; Caraka-Saṃhitā and Suśruta-Saṃhitā</td></tr>
+          <tr><td>IX</td><td>Tantric and Āgamic mantra-śāstra literature</td></tr>
+          <tr><td>X</td><td>Manuscript colophons, epigraphic corpora, critical-edition apparatus across the above</td></tr>
+          <tr><td>XI</td><td>Manu-Smṛti, Yājñavalkya-Smṛti, Mahābhārata, Bhagavad-Gītā, Aśokan edicts</td></tr>
+          <tr><td>XII</td><td>Sāṃkhya-Kārikā, Yoga-Sūtras Book IV, drawn together with all eleven prior parts' own anchors</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">4. What Each Part Specifically Hands to This Paper's Ten Case Studies</h4>
+        <p>Finally, this table makes explicit the specific documented thread each of this paper's ten case studies (Sections XII–XXI) draws from its own originating part, so that the case-study structure introduced in Section 11.2 can be read directly against the series-wide map above.</p>
+        <table class="datatable">
+          <caption>Case-Study Threads Traced to Their Originating Parts</caption>
+          <tr><th>Originating Part</th><th>Thread Extended by This Paper</th><th>Case Study</th></tr>
+          <tr><td>VII</td><td>Pratyāhāra-sūtras' own traditional origin</td><td>One (Vyākaraṇa)</td></tr>
+          <tr><td>VII</td><td>Tarka's own instrumental classification</td><td>Two (Nyāya)</td></tr>
+          <tr><td>IV</td><td>Rasa-niṣpatti's own documented unifying function</td><td>Three (Rasa)</td></tr>
+          <tr><td>V</td><td>Sāttvika abhinaya's own spontaneous character</td><td>Four (Abhinaya)</td></tr>
+          <tr><td>VI</td><td>Aṣṭāṅga-yoga's own explicit kaivalya-terminus</td><td>Five (Yoga-Śāstra)</td></tr>
+          <tr><td>VIII</td><td>Saptāṅga's own stated prajā-sukha purpose</td><td>Six (Arthaśāstra)</td></tr>
+          <tr><td>VIII</td><td>Tridoṣa's own svāsthya-terminus</td><td>Seven (Āyurveda)</td></tr>
+          <tr><td>IX</td><td>Japa's own documented refinement into ajapā-japa</td><td>Eight (Mantra-Śāstra)</td></tr>
+          <tr><td>XI</td><td>Prāyaścitta's own restorative purpose-clause</td><td>Nine (Dharmaśāstra)</td></tr>
+          <tr><td>X</td><td>Transmission-apparatus's own supporting role relative to guru-śiṣya presence</td><td>Ten (Transmission-History)</td></tr>
+        </table>
+      </div>
+
+      <div class="tab-panel" id="t2">
+        <h4>The Ten Case Studies, Compared in Depth</h4>
+        <p>Sections XII–XXI documented ten case studies independently. This panel places all ten side by side, then extends that comparison across three further dimensions: the evidentiary basis for each documented terminus, the register in which each terminus was drawn (individual, dyadic, or institutional), and four cross-cutting clusters this paper reads as organising the ten cases into related groups rather than ten unrelated instances.</p>
+
+        <h4 style="margin-top:30px;">1. The Ten Cases, Apparatus and Terminus</h4>
+        <table class="datatable">
+          <caption>Ten Case Studies in Full-Circle Return</caption>
+          <tr><th>Discipline</th><th>Elaborated Apparatus</th><th>Documented Terminus</th></tr>
+          <tr><td>Vyākaraṇa</td><td>Pratyāhāra-sūtras, Aṣṭādhyāyī's full rule-system</td><td>Return to unstruck, traditionally received sound</td></tr>
+          <tr><td>Nyāya</td><td>Pramāṇa-framework, tarka, Navya-Nyāya refinement</td><td>Pramā — direct, correct cognition</td></tr>
+          <tr><td>Nāṭyaśāstra (Rasa)</td><td>Vibhāva, anubhāva, vyabhicāribhāva taxonomy</td><td>Rasāsvāda — unified aesthetic tasting</td></tr>
+          <tr><td>Nāṭyaśāstra (Abhinaya)</td><td>Āṅgika, vācika, āhārya codified technique</td><td>Sāttvika abhinaya — spontaneous genuine feeling</td></tr>
+          <tr><td>Yoga-Śāstra</td><td>Aṣṭāṅga eight-limbed sequence</td><td>Kaivalya via dharma-megha-samādhi</td></tr>
+          <tr><td>Arthaśāstra</td><td>Saptāṅga seven-limbed state theory</td><td>Prajā-sukha — the subjects' own welfare</td></tr>
+          <tr><td>Āyurveda</td><td>Tridoṣa and constitutional diagnostic apparatus</td><td>Svāsthya — abiding in one's own nature</td></tr>
+          <tr><td>Mantra-Śāstra</td><td>Japa, mālā-counted repetition</td><td>Ajapā-japa — spontaneous, effortless repetition</td></tr>
+          <tr><td>Dharmaśāstra</td><td>Graded prāyaścitta procedure</td><td>Śuddhi — restored, unblemished standing</td></tr>
+          <tr><td>Transmission-History</td><td>Manuscript, commentary, critical-edition apparatus</td><td>Direct guru-śiṣya presence</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">2. Evidentiary Basis for Each Documented Terminus</h4>
+        <p>Consistent with this paper's own Section 11.3 caution, not all ten termini rest on the same kind or strength of textual attestation. This table makes that variation explicit, distinguishing termini stated directly in a discipline's own foundational text from termini this paper reads as implied by traditional practice or later commentary.</p>
+        <table class="datatable">
+          <caption>Evidentiary Strength Across the Ten Case Studies</caption>
+          <tr><th>Case Study</th><th>Evidentiary Basis</th><th>Strength</th></tr>
+          <tr><td>Yoga-Śāstra (Five)</td><td>Stated directly and sequentially in the Yoga-Sūtras' own Book IV</td><td>Direct textual attestation</td></tr>
+          <tr><td>Nyāya (Two)</td><td>Tarka's instrumental status stated in the Nyāya-Sūtras' own classification</td><td>Direct textual attestation</td></tr>
+          <tr><td>Arthaśāstra (Six)</td><td>Prajā-sukha stated explicitly in the Arthaśāstra's own repeated purpose-clause</td><td>Direct textual attestation</td></tr>
+          <tr><td>Āyurveda (Seven)</td><td>Svāsthya defined explicitly in the Caraka-Saṃhitā and Suśruta-Saṃhitā</td><td>Direct textual attestation</td></tr>
+          <tr><td>Dharmaśāstra (Nine)</td><td>Śuddhi as prāyaścitta's stated purpose across the digest tradition</td><td>Direct textual attestation</td></tr>
+          <tr><td>Nāṭyaśāstra Rasa (Three)</td><td>Rasa-niṣpatti documented in the Nāṭyaśāstra, with its own considerable later commentarial elaboration (Abhinavagupta and predecessors)</td><td>Direct textual attestation, commentarially extended</td></tr>
+          <tr><td>Vyākaraṇa (One)</td><td>Traditional account of the Māheśvara-Sūtras' own origin, recorded by later grammatical commentators rather than by Pāṇini himself</td><td>Traditional attestation</td></tr>
+          <tr><td>Abhinaya (Four)</td><td>Sāttvika abhinaya's spontaneous character documented in the Nāṭyaśāstra, its full pratiprasava-reading this paper's own extension</td><td>Textual basis, paper's own synthetic reading</td></tr>
+          <tr><td>Mantra-Śāstra (Eight)</td><td>Japa/ajapā-japa distinction documented across sādhanā-literature broadly rather than in one single foundational sūtra-text</td><td>Broad traditional attestation</td></tr>
+          <tr><td>Transmission-History (Ten)</td><td>Guru-śiṣya priority documented across the maṭha and paramparā material Part Ten surveyed, this paper's own self-referential extension</td><td>Traditional attestation, paper's own synthetic extension</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">3. Register: Individual, Dyadic, or Institutional Return</h4>
+        <p>This paper further distinguishes the ten cases by the register at which return is documented to occur — whether within a single practitioner, between two people, or across an institution or community.</p>
+        <table class="datatable">
+          <caption>Register of Return Across the Ten Case Studies</caption>
+          <tr><th>Register</th><th>Case Studies</th><th>Documented Character</th></tr>
+          <tr><td>Individual (within one practitioner)</td><td>Yoga-Śāstra, Abhinaya, Mantra-Śāstra, Āyurveda</td><td>Return documented as a change in the practitioner's own internal state or condition</td></tr>
+          <tr><td>Dyadic (between two people)</td><td>Nyāya, Transmission-History</td><td>Return documented as a change in the relationship between an inquirer and a valid cognition, or a student and a teacher</td></tr>
+          <tr><td>Institutional or communal</td><td>Arthaśāstra, Dharmaśāstra, Vyākaraṇa</td><td>Return documented at the scale of a state, a community's standing, or a transmitted textual tradition</td></tr>
+          <tr><td>Perceptual (within an audience)</td><td>Nāṭyaśāstra (Rasa)</td><td>Return documented as a change in the spectator's own experiential state during performance</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">4. Four Cross-Cutting Clusters</h4>
+        <p>Read together, the ten case studies group into four clusters this paper did not name explicitly in Sections XII–XXI but treats here as a further documented layer of analysis.</p>
+        <p><b>Technique-to-spontaneity cluster (Abhinaya, Mantra-Śāstra, Yoga-Śāstra).</b> These three cases share a documented structure in which sustained, deliberate practice is held to produce a state that no longer requires deliberate effort to sustain — sāttvika abhinaya, ajapā-japa, and kaivalya each name a condition where the practitioner's own agency recedes rather than intensifies.</p>
+        <p><b>Cognitive-apparatus cluster (Vyākaraṇa, Nyāya, Nāṭyaśāstra Rasa).</b> These three cases share a documented structure in which an elaborated formal or taxonomic apparatus (grammatical rule, logical inference-step, aesthetic component-vocabulary) is shown folding back into a simpler cognitive or perceptual event — correct grammatical sound, correct inference, unified aesthetic tasting.</p>
+        <p><b>Institutional-service cluster (Arthaśāstra, Dharmaśāstra).</b> These two cases share a documented structure in which an elaborated institutional apparatus (statecraft's saptāṅga, dharmaśāstra's prāyaścitta) is shown, by the tradition's own stated purpose-clause, to exist in service of a beneficiary distinct from the apparatus's own operators — the subjects, in the first case, and the transgressor's own restored standing, in the second.</p>
+        <p><b>Transmission-support cluster (Āyurveda, Transmission-History).</b> These two cases share a documented structure in which an elaborated diagnostic or documentary apparatus (tridoṣa's constitutional classification, manuscript and commentarial culture) is shown existing to support and eventually recede behind a more direct relationship — the patient's own svāsthya, and the guru-śiṣya relationship respectively.</p>
+        <p>This paper's own observation across all ten cases, and now across all four clusters, is structural consistency: in every case, the discipline's own elaborated technical apparatus is documented, within that discipline's own textual or traditional self-understanding, as instrumental to a comparatively simpler terminus rather than as an end complete in itself — the single pattern this paper's Section 22.2 names svarūpa-pratiṣṭhā, here shown to organise not merely ten isolated instances but four distinct, internally coherent structural families.</p>
+      </div>
+
+      <div class="tab-panel" id="t3">
+        <h4>Kaivalya and Pratiprasava Compared Across All Six Darśanas</h4>
+        <p>Part Eleven's own Tab Panel I compared dharma's treatment across the six darśanas. This panel extends that method to this paper's own subject, documenting how each darśana treats a comparable closure- or return-concept, then adds a per-darśana elaboration, a table of specific textual sources, and a documented note on the chronological relationship between these treatments.</p>
+
+        <table class="datatable">
+          <caption>Closure-Concepts Across the Six Darśanas</caption>
+          <tr><th>Darśana</th><th>Documented Closure-Concept</th><th>Relation to Pratiprasava</th></tr>
+          <tr><td>Sāṃkhya</td><td>Kaivalya via guṇa-pratiprasava</td><td>Source of the term itself (Sections II–IX)</td></tr>
+          <tr><td>Yoga</td><td>Kaivalya via dharma-megha-samādhi</td><td>Adopts Sāṃkhya's own vocabulary directly (Section VIII)</td></tr>
+          <tr><td>Mīmāṃsā</td><td>Apūrva exhausted once ritual fruit is obtained</td><td>Structurally comparable — a generated potency returning to quiescence once its purpose is served</td></tr>
+          <tr><td>Nyāya-Vaiśeṣika</td><td>Niḥśreyasa as dharma's own documented downstream terminus</td><td>Comparable terminus-structure, different technical vocabulary (Part Eleven, Section 8.1)</td></tr>
+          <tr><td>Vedānta</td><td>Mokṣa, with dharma itself transcended as sādhana (Part Eleven, Section X)</td><td>Most radical version — the agent-action structure itself, not merely its apparatus, is relativised</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">Per-Darśana Elaboration</h4>
+        <p><b>Sāṃkhya.</b> As this paper's own Sections II–IX have documented at length, Sāṃkhya is the technical home of pratiprasava itself: the guṇas' own documented return to sāmyāvasthā (equilibrium) once they have supplied sufficient experience and eventual discernment (viveka) for the puruṣa is the source-case from which this paper's entire organising vocabulary is drawn, making Sāṃkhya's own treatment not merely comparable to but constitutive of this paper's frame.</p>
+        <p><b>Yoga.</b> Patañjali's own system is documented to adopt Sāṃkhya's metaphysical apparatus directly while supplying the practical, sequential method (aṣṭāṅga-yoga, Case Study Five) by which a practitioner is held to move toward that same kaivalya — the two systems' own well-documented historical closeness meaning Yoga's contribution here is primarily methodological, specifying how pratiprasava is approached rather than redefining what it names.</p>
+        <p><b>Mīmāṃsā.</b> Mīmāṃsā's own apūrva (the unseen potency a ritual act is held to generate, bridging the act itself and its later fruit) offers this paper's own most structurally distant parallel: apūrva is documented as expended, rather than returning to any prior equilibrium, once its fruit is delivered — a genuine structural difference from guṇa-pratiprasava this paper registers rather than minimises, since apūrva's own termination is consumption rather than return.</p>
+        <p><b>Nyāya-Vaiśeṣika.</b> As Part Eleven's own Section 8.1 documented, Vaiśeṣika defines dharma by its own downstream effect — abhyudaya and niḥśreyasa — with niḥśreyasa (the highest good) functioning as a terminus comparable in structural position to kaivalya, though reached, on the textual evidence, through a considerably less elaborated technical vocabulary of return than Sāṃkhya-Yoga supplies.</p>
+        <p><b>Vedānta.</b> Advaita Vedānta's own mokṣa, as Part Eleven's Section X already documented, is this paper's most radical comparandum: where Sāṃkhya-Yoga's kaivalya still presupposes the puruṣa/prakṛti distinction even in its own final resolved state, Advaita's mokṣa is documented to relativise the agent-action structure itself, meaning dharma — and, by this paper's own extension, any discipline's own proliferated apparatus — is understood as sādhana only, never carrying independent final standing even at its own most complete.</p>
+        <p><b>Buddhist non-darśana comparandum, noted for contrast only.</b> Though not one of the six orthodox darśanas this series' method has consistently surveyed, this paper notes for structural contrast that Buddhist abhidharma traditions document a comparable analysis of conditioned phenomena (saṃskṛta-dharmas) settling toward an unconditioned state, addressed further, with full bracketing, in Tab Panel IV.</p>
+
+        <h4 style="margin-top:30px;">Specific Textual Sources Per Darśana</h4>
+        <table class="datatable">
+          <caption>Primary Sources for Each Darśana's Closure-Concept</caption>
+          <tr><th>Darśana</th><th>Primary Source</th><th>Key Passage or Section</th></tr>
+          <tr><td>Sāṃkhya</td><td>Īśvarakṛṣṇa, Sāṃkhya-Kārikā</td><td>Verses documenting guṇa-vyatyaya and pratiprasava following puruṣa-prakṛti discernment</td></tr>
+          <tr><td>Yoga</td><td>Patañjali, Yoga-Sūtras</td><td>Book IV (Kaivalya-pāda), sūtras on dharma-megha-samādhi and kaivalya</td></tr>
+          <tr><td>Mīmāṃsā</td><td>Jaimini, Mīmāṃsā-Sūtras; Kumārila's later commentary</td><td>Apūrva material within the karma-kāṇḍa ritual-efficacy discussion</td></tr>
+          <tr><td>Nyāya-Vaiśeṣika</td><td>Kaṇāda, Vaiśeṣika-Sūtras</td><td>Opening sūtras defining dharma by abhyudaya and niḥśreyasa</td></tr>
+          <tr><td>Vedānta</td><td>Śaṅkara and successors, Brahma-Sūtra commentary</td><td>Material on dharma as sādhana subordinate to jñāna, as surveyed in Part Ten's Madhusūdana Sarasvatī reference</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">A Documented Note on Chronology</h4>
+        <p>This paper is careful to document, rather than obscure, that these six treatments are not documented as having arisen simultaneously or independently: Sāṃkhya's own classical systematisation (the Sāṃkhya-Kārikā) and Yoga's own systematisation (the Yoga-Sūtras) are documented by standard scholarship as historically close and mutually shaping, while Mīmāṃsā, Nyāya-Vaiśeṣika, and Vedānta each developed their own closure-vocabulary across a longer, more diffuse documented period of commentarial elaboration — meaning the convergence this paper documents across all six darśanas is a documented structural convergence upon a shared concern, not evidence of a single, simultaneous, or coordinated original source.</p>
+        <p>This paper's own synthetic observation is that every darśana this series has surveyed documents some version of apparatus-to-simplicity return, even where each names and technically specifies that return differently, and even where — as with Mīmāṃsā's apūrva — the specific structure of that return (consumption rather than equilibrium-restoration) genuinely differs — a pattern this paper reads as further confirming Part Eleven's own Section VII finding that a shared structural concern can carry genuinely distinct technical senses across different textual communities within the same broader tradition.</p>
+      </div>
+
+      <div class="tab-panel" id="t4">
+        <h4>Comparative Closure-Concepts, Explicitly Bracketed</h4>
+        <p>Consistent with this series' recurring practice (Part Ten, Part Eleven's Tab Panel IV), this panel offers structural comparison only, without claiming historical connection or doctrinal equivalence between the traditions compared. This expanded panel documents six comparanda rather than two, together with a methodological note on why comparison is offered at all and where, on this paper's own reading, the comparison's usefulness runs out.</p>
+        <table class="datatable">
+          <caption>Pratiprasava Compared with Six Neighbouring Closure-Concepts</caption>
+          <tr><th>Tradition</th><th>Structural Parallel</th><th>Documented Difference</th></tr>
+          <tr><td>Buddhist Nirvāṇa</td><td>Both frameworks document a technically specified cessation-state reached through sustained, apparatus-heavy practice (śīla, samādhi, prajñā in one case; aṣṭāṅga-yoga in the other)</td><td>Nirvāṇa is documented within a framework explicitly rejecting the puruṣa/prakṛti dualism Sāṃkhya's own kaivalya presupposes, and rejecting a permanent self as the entity that attains closure</td></tr>
+          <tr><td>Daoist Wu Wei</td><td>Both frameworks document skilled, effortful practice returning to an effortless, spontaneous mode of action, closely paralleling this paper's own Case Study Four (sāttvika abhinaya) and Case Study Eight (ajapā-japa)</td><td>Wu wei is documented within a cosmological framework centred on the Dao, without a directly corresponding puruṣa/prakṛti or guṇa-based technical apparatus</td></tr>
+          <tr><td>Stoic Apatheia</td><td>Both frameworks document a disciplined progression through graded practice toward a state of settled, undisturbed equanimity, comparable in function to kaivalya's own documented freedom from guṇa-driven disturbance</td><td>Apatheia is documented within a framework grounded in Stoic physics and logos rather than in a guṇa-based cosmology, and is reached through a documented emphasis on right judgment rather than yogic technique specifically</td></tr>
+          <tr><td>Confucian and Neo-Confucian Zhōngyōng (Equilibrium)</td><td>Both frameworks document a return, following sustained ethical and ritual cultivation, to a documented state of centred balance comparable structurally to Section IX's own guṇa-equilibrium</td><td>Zhōngyōng is documented as fundamentally social and ethical in orientation, without a directly corresponding metaphysical guṇa-apparatus or puruṣa-concept</td></tr>
+          <tr><td>Sufi Fanā</td><td>Both frameworks document an extended, technique-heavy practice (dhikr, comparable structurally to this paper's own Case Study Eight material on japa) held to culminate in the practitioner's own effortful agency receding</td><td>Fanā is documented within an explicitly theistic framework oriented toward union with a personal divine reality, distinct from kaivalya's own non-theistic puruṣa/prakṛti terminus</td></tr>
+          <tr><td>Kabbalistic Tzimtzum and Return</td><td>Both frameworks document a two-directional cosmological movement — an initial contraction or proliferation, and a later documented return or repair (tikkun) — structurally comparable to this paper's own prasava/pratiprasava pair (Section III)</td><td>Tzimtzum is documented within a theistic emanationist cosmology with its own distinct technical vocabulary, not directly derived from or historically connected to the Sāṃkhya material this paper documents</td></tr>
+        </table>
+
+        <h4 style="margin-top:30px;">A Methodological Note on Why This Comparison Is Offered</h4>
+        <p>This paper offers this expanded comparative table for a specific, bounded reason: the structural pattern this paper's ten case studies document — elaborated apparatus, deliberately built, eventually folding back into simplicity — recurs often enough across genuinely independent traditions that documenting the recurrence itself carries analytical value, distinct from any claim about which tradition, if any, is correct in its own further theological or metaphysical commitments.</p>
+        <h4>Where This Paper Reads the Comparison's Usefulness as Running Out</h4>
+        <p>This paper is equally careful to document where structural comparison stops being informative: the six traditions compared above differ substantially in their own account of what, if anything, persists through closure (a permanent puruṣa in Sāṃkhya-Yoga; no permanent self in Buddhist thought; a personal divine reality in the Sufi case; an impersonal Dao in the Daoist case), and this paper does not treat the shared surface-structure documented above as evidence that these deeper commitments are compatible, reconcilable, or secretly identical. Consistent with this series' recurring caution, this paper offers structural parallel as an aid to recognising a recurring pattern, not as a claim about comparative doctrinal truth.</p>
+      </div>
+
+      <div class="tab-panel" id="t5">
+        <h4>This Project's Forward Offerings, Surveyed with Evenhandedness</h4>
+        <p>This panel documents, without advocacy, how Series B's own completed twelve-part structure may be used by different readers, consistent with Section 24.3's own invitation-rather-than-verdict framing.</p>
+        <p><b>For students of a single discipline.</b> A reader interested specifically in vyākaraṇa, nyāya, arthaśāstra, āyurveda, or nāṭyaśāstra can use this series' own cross-referenced part-structure to locate that discipline's own proliferation (Parts VII–VIII, IV–V) and, via this paper's own case studies, its own documented closure-structure, without needing to read all twelve parts sequentially.</p>
+        <p><b>For students of comparative method.</b> A reader interested in how a single tradition's own technical vocabulary (prasava, pratiprasava, dharma, kaivalya) can organise material across grammar, logic, aesthetics, medicine, statecraft, and ethics alike may find this series' own twelve-part structure a documented worked example of such an approach, distinct from this project's own object-level claims about any single discipline.</p>
+        <p><b>For this project's own continuing research.</b> Consistent with Section 24.1, this series' own completed structure now stands available as a stable reference-point for Cultural Musings' own parallel Series A and its other continuing research lines, in the documented supporting role Section 23.1 describes.</p>
+      </div>
+
+      <div class="tab-panel" id="t6">
+        <h4>Full-Series Interactive Glossary</h4>
+        <p>A browsable reference consolidating key technical vocabulary from across all twelve parts of Series B, alongside this paper's own closing terms. See also the full closing Glossary below.</p>
+        <dl class="glossary">
+          <dt><span class="glossterm">वाक्</span> Vāk</dt>
+          <dd>The ground of psychological awareness prior to differentiation (Part One); this series' own recurring subject.</dd>
+          <dt><span class="glossterm">प्रसवः</span> prasava</dt>
+          <dd>Forward, generative proliferation; this series' own Parts I–VIII movement (Section 3.1).</dd>
+          <dt><span class="glossterm">प्रतिप्रसवः</span> pratiprasava</dt>
+          <dd>Involutionary return of the proliferated guṇas to equilibrium; this paper's own organising term (Section II).</dd>
+          <dt><span class="glossterm">कैवल्यम्</span> kaivalya</dt>
+          <dd>The puruṣa's own documented final condition once guṇa-pratiprasava is complete (Section VIII).</dd>
+          <dt><span class="glossterm">गुणप्रतिक्रमः / गुणप्रतिप्रसवः</span> guṇa-pratiprasava</dt>
+          <dd>The guṇas' own specific documented return to equilibrium (Section IX).</dd>
+          <dt><span class="glossterm">संस्कारशेषः</span> saṃskāra-śeṣa</dt>
+          <dd>The documented remainder of impressions persisting even through substantial return (Section X).</dd>
+          <dt><span class="glossterm">स्वरूपप्रतिष्ठा</span> svarūpa-pratiṣṭhā</dt>
+          <dd>Abiding in one's own nature; this paper's proposed name for the shared structure across all ten case studies (Section XXII).</dd>
+          <dt><span class="glossterm">जपः / अजपाजपः</span> japa / ajapā-japa</dt>
+          <dd>Deliberate mantra-repetition and its own documented spontaneous refinement (Section XIX; Part Nine).</dd>
+          <dt><span class="glossterm">धर्मः</span> dharma</dt>
+          <dd>The series' own evaluative framework, documented fully in Part Eleven and recapitulated here (Section VII).</dd>
+          <dt><span class="glossterm">रसनिष्पत्तिः</span> rasa-niṣpatti</dt>
+          <dd>The arising of unified aesthetic rasa from the Nāṭyaśāstra's own multiplied technical vocabulary (Section XIV).</dd>
+        </dl>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ornament">✦</div>
+
+  <section id="sec-appendix" class="context-box">
+    <h3>Methodological Appendix: Evidentiary Categories Applied Across This Paper</h3>
+    <p>Following the precedent established in Parts Eight through Eleven, this appendix makes explicit the evidentiary categories this paper's twenty-five sections and ten case studies have tried consistently to distinguish. First, directly documented historical or textual fact — the Yoga-Sūtras' own explicit kaivalya-sequence (Section VIII), the Nyāya-Sūtras' own classification of tarka (Case Study Two), and the Arthaśāstra's own stated purpose-clause (Case Study Six) all fall in this category. Second, this paper's own structural-synthetic proposal — most prominently the application of pratiprasava as a unifying frame across all ten case studies (Section 11.3), the coining of svarūpa-pratiṣṭhā as a name for their shared structure (Section 22.2), and the overall claim that Series B's twelve parts document a single argument (Section XXV) — offered as this paper's own organising interpretation rather than as a claim that every cited tradition uses this paper's own specific vocabulary. Third, explicitly bracketed modern and cross-traditional comparison — the Buddhist and Daoist comparisons (Tab Panel IV) and the six-darśana comparative table (Tab Panel III) — offered for documentary and structural value without claiming equivalence.</p>
+    <table class="datatable">
+      <tr><th>Category</th><th>Example</th><th>Section(s)</th></tr>
+      <tr><td>Directly documented fact</td><td>Yoga-Sūtras' kaivalya-sequence; Nyāya's tarka-classification; Arthaśāstra's purpose-clause</td><td>VIII, Case Study 2, Case Study 6</td></tr>
+      <tr><td>Structural-synthetic proposal</td><td>Pratiprasava as unifying frame; svarūpa-pratiṣṭhā; series-as-single-argument</td><td>11.3, 22.2, XXV</td></tr>
+      <tr><td>Bracketed comparison</td><td>Buddhist nirvāṇa, Daoist wu wei; six-darśana table</td><td>Tab IV, Tab III</td></tr>
+    </table>
+  </section>
+
+  <div class="divider-orn">❖ ❖ ❖</div>
+
+  <section id="footnotes">
+    <h2 class="sectiontitle" style="font-size:22px;">Footnotes</h2>
+    <ol class="footnotes">
+      <li><sup>1</sup> On pratiprasava's etymology and Sāṃkhya technical sense: standard Sanskrit lexicography, as surveyed in Monier Monier-Williams, <i>A Sanskrit-English Dictionary</i> (Oxford: Clarendon Press, 1899), already a standard reference across this series.</li>
+      <li><sup>2</sup> On Sāṃkhya's prasava/pratiprasava pair and the guṇas: Īśvarakṛṣṇa, <i>Sāṃkhya-Kārikā</i>, standard critical editions; Gerald James Larson, <i>Classical Sāṃkhya: An Interpretation of Its History and Meaning</i> (Delhi: Motilal Banarsidass, 1979).</li>
+      <li><sup>3</sup> On kaivalya and dharma-megha-samādhi: Patañjali, <i>Yoga-Sūtras</i>, Book IV, standard critical editions, already cited in this series' own Part Six and Part Eleven.</li>
+      <li><sup>4</sup> On saṃskāra-śeṣa: standard Yoga-commentarial sources, surveyed generally in Larson, op. cit.</li>
+      <li><sup>5</sup> On the Māheśvara-Sūtras and their traditional origin: Pāṇini, <i>Aṣṭādhyāyī</i>, standard critical editions; traditional account as surveyed in this series' own Part Seven.</li>
+      <li><sup>6</sup> On tarka's classification in Nyāya: Gautama, <i>Nyāya-Sūtras</i>, standard critical editions.</li>
+      <li><sup>7</sup> On rasa-niṣpatti: Bharata, <i>Nāṭyaśāstra</i>, standard critical editions, already cited in this series' own Part Four.</li>
+      <li><sup>8</sup> On sāttvika abhinaya: <i>Nāṭyaśāstra</i>, standard critical editions, already cited in this series' own Part Five.</li>
+      <li><sup>9</sup> On the Arthaśāstra's purpose-clause and prajā-sukha: Kauṭilya, <i>Arthaśāstra</i>, standard critical editions; Patrick Olivelle's scholarship, as cited in this series' own Part Eight bibliography.</li>
+      <li><sup>10</sup> On svāsthya in classical āyurveda: Caraka-Saṃhitā and Suśruta-Saṃhitā, standard critical editions, already cited in this series' own Part Eight.</li>
+      <li><sup>11</sup> On japa and ajapā-japa: standard sādhanā-literature, as surveyed in this series' own Part Nine bibliography.</li>
+      <li><sup>12</sup> On prāyaścitta and śuddhi: P. V. Kane, <i>History of Dharmaśāstra</i>, vol. IV (Poona: Bhandarkar Oriental Research Institute, 1930), already cited in this series' own Part Eleven.</li>
+      <li><sup>13</sup> On the guru-śiṣya relationship and transmission-apparatus: as surveyed in this series' own Part Ten bibliography.</li>
+      <li><sup>14</sup> On comparative closure-concepts in Buddhist and Daoist thought, offered strictly at the structural level: standard general reference works on Buddhist and Daoist philosophy.</li>
+    </ol>
+  </section>
+
+  <div class="divider-orn">★</div>
+
+  <section id="bibliography">
+    <h2 class="sectiontitle" style="font-size:22px;">Bibliography</h2>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;">Primary Sources</h4>
+    <p class="dim" style="font-size:14.5px;">
+    Īśvarakṛṣṇa. <i>Sāṃkhya-Kārikā.</i> Standard critical editions.<br>
+    Patañjali. <i>Yoga-Sūtras.</i> Standard critical editions, already cited across this series.<br>
+    Pāṇini. <i>Aṣṭādhyāyī.</i> Standard critical editions.<br>
+    Gautama. <i>Nyāya-Sūtras.</i> Standard critical editions.<br>
+    Bharata. <i>Nāṭyaśāstra.</i> Standard critical editions.<br>
+    Kauṭilya. <i>Arthaśāstra.</i> Standard critical editions.<br>
+    <i>Caraka-Saṃhitā</i> and <i>Suśruta-Saṃhitā.</i> Standard critical editions.<br>
+    Manu and Yājñavalkya. Dharmaśāstra digests, standard critical editions, as cited in this series' own Part Eleven.
+    </p>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Secondary Sources</h4>
+    <p class="dim" style="font-size:14.5px;">
+    Larson, Gerald James. <i>Classical Sāṃkhya: An Interpretation of Its History and Meaning.</i> Delhi: Motilal Banarsidass, 1979.<br>
+    Kane, P. V. <i>History of Dharmaśāstra.</i> 5 vols. Poona: Bhandarkar Oriental Research Institute, 1930–1962.<br>
+    Larson, Gerald James, and Ram Shankar Bhattacharya, eds. <i>Encyclopedia of Indian Philosophies, Vol. IV: Sāṃkhya.</i> Delhi: Motilal Banarsidass, 1987.<br>
+    Feuerstein, Georg. <i>The Yoga Tradition: Its History, Literature, Philosophy and Practice.</i> Prescott: Hohm Press, 1998.<br>
+    Monier-Williams, Monier. <i>A Sanskrit-English Dictionary.</i> Oxford: Clarendon Press, 1899.
+    </p>
+    <h4 style="color:var(--ink-dim);text-transform:uppercase;letter-spacing:.06em;font-size:14px;margin-top:24px;">Predecessor Papers in Series B</h4>
+    <p class="dim" style="font-size:14.5px;">Cultural Musings. <i>Series B, Parts I–XI.</i> As cited throughout this paper, particularly Part One (Vāk as ground), Part Six (yoga-śāstra's citta-vṛtti framework), Part Seven (vyākaraṇa, nyāya), Part Eight (arthaśāstra, āyurveda), Part Nine (mantra-śāstra's recursive structure), Part Ten (transmission-history), and Part Eleven (dharma and adharma).</p>
+  </section>
+
+  <div class="divider-orn">☆</div>
+
+  <section id="glossary">
+    <h2 class="sectiontitle" style="font-size:22px;">Glossary</h2>
+    <dl class="glossary">
+      <dt><span class="glossterm">वाक्</span> Vāk</dt>
+      <dd>The ground of psychological awareness prior to differentiation (Part One); this series' own recurring subject.</dd>
+      <dt><span class="glossterm">प्रसवः</span> prasava</dt>
+      <dd>Forward, generative proliferation of the guṇas; this series' own Parts I–VIII movement (Section III).</dd>
+      <dt><span class="glossterm">प्रतिप्रसवः</span> pratiprasava</dt>
+      <dd>Involutionary return of the proliferated guṇas to equilibrium; this paper's own organising term (Section II).</dd>
+      <dt><span class="glossterm">कैवल्यम्</span> kaivalya</dt>
+      <dd>The puruṣa's own documented final condition once guṇa-pratiprasava is complete (Section VIII).</dd>
+      <dt><span class="glossterm">गुणप्रतिप्रसवः</span> guṇa-pratiprasava</dt>
+      <dd>The guṇas' own specific documented return to equilibrium, distinct from kaivalya itself (Section IX).</dd>
+      <dt><span class="glossterm">संस्कारशेषः</span> saṃskāra-śeṣa</dt>
+      <dd>The documented remainder of impressions persisting even through substantial return (Section X).</dd>
+      <dt><span class="glossterm">स्वरूपप्रतिष्ठा</span> svarūpa-pratiṣṭhā</dt>
+      <dd>Abiding in one's own nature; this paper's proposed name for the structure shared by all ten case studies (Section XXII).</dd>
+      <dt><span class="glossterm">जपः / अजपाजपः</span> japa / ajapā-japa</dt>
+      <dd>Deliberate mantra-repetition and its own documented spontaneous refinement (Section XIX).</dd>
+      <dt><span class="glossterm">स्वास्थ्यम्</span> svāsthya</dt>
+      <dd>Āyurvedic health defined as abiding in one's own nature; the tridoṣa apparatus's own documented terminus (Section XVIII).</dd>
+      <dt><span class="glossterm">प्रजासुखम्</span> prajā-sukha</dt>
+      <dd>The subjects' own welfare, the Arthaśāstra's own stated purpose for the saptāṅga state-apparatus (Section XVII).</dd>
+      <dt><span class="glossterm">शुद्धिः</span> śuddhi</dt>
+      <dd>Purity or unblemished standing; prāyaścitta's own documented restorative terminus (Section XX).</dd>
+      <dt><span class="glossterm">रसनिष्पत्तिः</span> rasa-niṣpatti</dt>
+      <dd>The arising of unified aesthetic rasa from the Nāṭyaśāstra's own multiplied technical vocabulary (Section XIV).</dd>
+      <dt><span class="glossterm">धर्मः</span> dharma</dt>
+      <dd>The series' own evaluative framework, documented fully in Part Eleven and recapitulated here (Section VII).</dd>
+    </dl>
+  </section>
+
+  <div class="divider-orn">↗</div>
+
+  <section id="sec-recap">
+    <h2 class="sectiontitle" style="font-size:24px;">Recap, Closing Synthesis, and Project Handoff</h2>
+    <p>Twenty-five core sections, ten worked case studies drawn from every major discipline this series has surveyed, and a six-panel interactive deep-dive widget together close Series B's own twelve-part documented argument. This paper has shown, across grammar, logic, aesthetics, embodied performance, disciplined attention, statecraft, medicine, mantra, ethics, and this series' own transmission-history alike, a single recurring structure: an elaborated technical apparatus, built with real documented care across this series' own eleven prior parts, folding back — not discarded, but returned, saṃskāra-śeṣa intact — into a ground simpler than the apparatus itself, a ground this series named, in Part One, before it knew the full extent of what it would go on to elaborate.</p>
+    <blockquote class="pull">
+      Part One asked what Vāk could become. Part Eleven asked what Vāk becomes accountable to. This paper asks the question those two together were always heading toward: what Vāk returns to, once accountable and become. The answer, documented across ten disciplines and twelve parts, is not a discarding of the twelve parts' own considerable work, but their own return — apparatus intact, saṃskāra-śeṣa retained — to the single ground from which each of them, in its own register, never actually departed.
+      <span class="attrib">Series B · Editorial Framework</span>
+    </blockquote>
+    <p>Series B closes here, twelve parts complete. What it hands forward is not a final verdict but a stable, freely accessible, cross-referenced structure — available to this project's own continuing research lines, and to any reader who arrives, as this paper's own Section 24.3 puts it, seeking invitation rather than closed conclusion.</p>
+  </section>
+
+</main>
+
+<div class="paginator-bar" id="paginator-bar">
+  <button id="pg-prev">◀ Prev</button>
+  <span class="pg-status" id="pg-status">Page 1 of 1</span>
+  <button id="pg-next">Next ▶</button>
+</div>
+
+<footer class="papertail" id="page-footer">
+  <div class="om">ॐ तत् सत्</div>
+  <div class="omtatsat">om tat sat — That is Truth</div>
+  <div class="stamp">
+    <b>Series B · Part Twelve · Closing Volume (Complete Release: Sections I–XXV + Ten Case Studies + Six-Panel Widget)</b> · Pratiprasava: Vāk's Return and the Handoff Beyond<br>
+    Cultural Musings · Vedic &amp; Śāstric Research Platform<br>
+    Predecessor: Series B · Part Eleven · Dharma and Adharma: The Ethical-Metaphysical Synthesis<br>
+    Series B — Complete: Twelve of Twelve Parts
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ---- Tab widget ----
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  var tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = btn.getAttribute('data-tab');
+      tabBtns.forEach(function(b){ b.classList.remove('active'); });
+      tabPanels.forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = document.getElementById(target);
+      if(panel){ panel.classList.add('active'); }
+    });
+  });
+
+  // ---- Paginator: dynamically chunk main content into ~60 pages ----
+  var TARGET_PAGES = 60;
+  var main = document.getElementById('main-content');
+  var scrollBtn = document.getElementById('btn-scroll-view');
+  var pageBtn = document.getElementById('btn-page-view');
+  var pageIndicator = document.getElementById('page-indicator');
+  var paginatorBar = document.getElementById('paginator-bar');
+  var pgStatus = document.getElementById('pg-status');
+  var pgPrev = document.getElementById('pg-prev');
+  var pgNext = document.getElementById('pg-next');
+  var pageFooter = document.getElementById('page-footer');
+
+  var paginated = false;
+  var pages = [];
+  var currentPage = 0;
+  var built = false;
+
+  function buildPages(){
+    if(built) return;
+    built = true;
+    var children = Array.prototype.slice.call(main.children);
+    var charTarget = 0;
+    children.forEach(function(c){ charTarget += (c.textContent || '').length; });
+    var perPage = Math.max(200, Math.ceil(charTarget / TARGET_PAGES));
+
+    var bucket = [];
+    var bucketLen = 0;
+    children.forEach(function(child){
+      var len = (child.textContent || '').length;
+      if(bucketLen > 0 && bucketLen + len > perPage){
+        pages.push(bucket);
+        bucket = [];
+        bucketLen = 0;
+      }
+      bucket.push(child);
+      bucketLen += len;
+    });
+    if(bucket.length){ pages.push(bucket); }
+  }
+
+  function showPage(idx){
+    if(idx < 0 || idx >= pages.length) return;
+    currentPage = idx;
+    pages.forEach(function(pg, i){
+      pg.forEach(function(el){
+        el.classList.toggle('page-hidden', i !== idx);
+      });
+    });
+    pgStatus.textContent = 'Page ' + (idx+1) + ' of ' + pages.length;
+    pageIndicator.textContent = 'Page ' + (idx+1) + ' / ' + pages.length;
+    pgPrev.disabled = idx === 0;
+    pgNext.disabled = idx === pages.length - 1;
+    window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
+  }
+
+  function enterPageView(){
+    buildPages();
+    paginated = true;
+    document.body.classList.add('paginated');
+    paginatorBar.classList.add('show');
+    scrollBtn.classList.remove('active');
+    pageBtn.classList.add('active');
+    showPage(0);
+  }
+
+  function enterScrollView(){
+    paginated = false;
+    document.body.classList.remove('paginated');
+    paginatorBar.classList.remove('show');
+    pageBtn.classList.remove('active');
+    scrollBtn.classList.add('active');
+    pageIndicator.textContent = '';
+    pages.forEach(function(pg){ pg.forEach(function(el){ el.classList.remove('page-hidden'); }); });
+  }
+
+  scrollBtn.addEventListener('click', enterScrollView);
+  pageBtn.addEventListener('click', enterPageView);
+  pgPrev.addEventListener('click', function(){ showPage(currentPage - 1); });
+  pgNext.addEventListener('click', function(){ showPage(currentPage + 1); });
+})();
+</script>
+
+</body>
+</html>
